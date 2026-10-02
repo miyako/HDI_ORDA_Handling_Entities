@@ -1,4 +1,4 @@
-//%attributes = {}
+//%attributes = {"invisible":true}
 
 //Update the "View first" / "View Last" buttons labels
 
@@ -7,8 +7,8 @@
 If ((Form:C1466.red.length>=1) & (r1=1))
 	OBJECT SET ENABLED:C1123(*; "btnView@"; True:C214)
 	
-	OBJECT SET TITLE:C194(*; "btnViewFirst"; "View first in Red team")
-	OBJECT SET TITLE:C194(*; "btnViewLast"; "View last in Red team")
+	OBJECT SET TITLE:C194(*; "btnViewFirst"; Localized string("BtnViewFirstRed"))
+	OBJECT SET TITLE:C194(*; "btnViewLast"; Localized string("BtnViewLastRed"))
 End if 
 
 
@@ -16,6 +16,6 @@ End if
 If ((Form:C1466.blue.length>=1) & (r2=1))
 	OBJECT SET ENABLED:C1123(*; "btnView@"; True:C214)
 	
-	OBJECT SET TITLE:C194(*; "btnViewFirst"; "View first in Blue team")
-	OBJECT SET TITLE:C194(*; "btnViewLast"; "View last in Blue team")
+	OBJECT SET TITLE:C194(*; "btnViewFirst"; Localized string("BtnViewFirstBlue"))
+	OBJECT SET TITLE:C194(*; "btnViewLast"; Localized string("BtnViewLastBlue"))
 End if 

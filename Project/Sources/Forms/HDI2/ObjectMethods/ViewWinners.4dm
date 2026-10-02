@@ -1,5 +1,5 @@
 
-C_OBJECT:C1216($leg; $tabletop; $screwA; $screwB; $net)
+var $leg; $tabletop; $screwA; $screwB; $net : Object
 
 
 If (btnTrace)

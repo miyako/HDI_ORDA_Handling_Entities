@@ -1,4 +1,4 @@
-//%attributes = {}
+//%attributes = {"invisible":true}
 
 
 //This launches the meta info expression of the list boxes (RedGamers / Form.red and BlueGamers / Form.blue)

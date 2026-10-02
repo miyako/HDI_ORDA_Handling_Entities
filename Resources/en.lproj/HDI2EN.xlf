@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+	<file datatype="plaintext" original="HDI2" source-language="en" target-language="en">
+		<body>
+			<trans-unit id="HDI2_Gamers" resname="HDI2_Gamers">
+				<source>Gamers</source>
+				<target>Gamers</target>
+			</trans-unit>
+			<trans-unit id="HDI2_EatsMeat" resname="HDI2_EatsMeat">
+				<source>Eats meat</source>
+				<target>Eats meat</target>
+			</trans-unit>
+			<trans-unit id="HDI2_FirstName" resname="HDI2_FirstName">
+				<source>First name</source>
+				<target>First name</target>
+			</trans-unit>
+			<trans-unit id="HDI2_LastName" resname="HDI2_LastName">
+				<source>Last name</source>
+				<target>Last name</target>
+			</trans-unit>
+			<trans-unit id="HDI2_Trace" resname="HDI2_Trace">
+				<source>Trace</source>
+				<target>Trace</target>
+			</trans-unit>
+			<trans-unit id="HDI2_AddToBlue" resname="HDI2_AddToBlue">
+				<source>Add to Blue</source>
+				<target>Add to Blue</target>
+			</trans-unit>
+			<trans-unit id="HDI2_AddToRed" resname="HDI2_AddToRed">
+				<source>Add to Red</source>
+				<target>Add to Red</target>
+			</trans-unit>
+			<trans-unit id="HDI2_Level" resname="HDI2_Level">
+				<source>Level</source>
+				<target>Level</target>
+			</trans-unit>
+			<trans-unit id="HDI2_RankInTeam" resname="HDI2_RankInTeam">
+				<source>Rank in team?</source>
+				<target>Rank in team?</target>
+			</trans-unit>
+			<trans-unit id="HDI2_YearsOfExperience" resname="HDI2_YearsOfExperience">
+				<source>Years of experience</source>
+				<target>Years of experience</target>
+			</trans-unit>
+			<trans-unit id="HDI2_OverallRank" resname="HDI2_OverallRank">
+				<source>Overall rank?</source>
+				<target>Overall rank?</target>
+			</trans-unit>
+			<trans-unit id="HDI2_PingPongTableParts" resname="HDI2_PingPongTableParts">
+				<source>Ping Pong table parts</source>
+				<target>Ping Pong table parts</target>
+			</trans-unit>
+			<trans-unit id="HDI2_Name" resname="HDI2_Name">
+				<source>Name</source>
+				<target>Name</target>
+			</trans-unit>
+			<trans-unit id="HDI2_Quantity" resname="HDI2_Quantity">
+				<source>Quantity</source>
+				<target>Quantity</target>
+			</trans-unit>
+			<trans-unit id="HDI2_PartsGatheredOrder" resname="HDI2_PartsGatheredOrder">
+				<source>The parts will be gathered in this order</source>
+				<target>The parts will be gathered in this order</target>
+			</trans-unit>
+			<trans-unit id="HDI2_AmIOrdered" resname="HDI2_AmIOrdered">
+				<source>Am I an ordered entity selection?</source>
+				<target>Am I an ordered entity selection?</target>
+			</trans-unit>
+			<trans-unit id="HDI2_WhichOrder" resname="HDI2_WhichOrder">
+				<source>In which order will I use them?</source>
+				<target>In which order will I use them?</target>
+			</trans-unit>
+			<trans-unit id="HDI2_Rank" resname="HDI2_Rank">
+				<source>Rank</source>
+				<target>Rank</target>
+			</trans-unit>
+			<trans-unit id="HDI2_IncreaseLevel" resname="HDI2_IncreaseLevel">
+				<source>Increase level for all gamers</source>
+				<target>Increase level for all gamers</target>
+			</trans-unit>
+			<trans-unit id="HDI2_GetGamerWithRank" resname="HDI2_GetGamerWithRank">
+				<source>Get gamer with rank:</source>
+				<target>Get gamer with rank:</target>
+			</trans-unit>
+			<trans-unit id="HDI2_SmallList" resname="HDI2_SmallList">
+				<source>Small list</source>
+				<target>Small list</target>
+			</trans-unit>
+			<trans-unit id="HDI2_ViewPrevious" resname="HDI2_ViewPrevious">
+				<source>View previous</source>
+				<target>View previous</target>
+			</trans-unit>
+			<trans-unit id="HDI2_ViewNext" resname="HDI2_ViewNext">
+				<source>View next</source>
+				<target>View next</target>
+			</trans-unit>
+			<trans-unit id="HDI2_ChooseSliceSize" resname="HDI2_ChooseSliceSize">
+				<source>Choose the slice size</source>
+				<target>Choose the slice size</target>
+			</trans-unit>
+			<trans-unit id="HDI2_WhichTeam" resname="HDI2_WhichTeam">
+				<source>To which team does the gamer belong?</source>
+				<target>To which team does the gamer belong?</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

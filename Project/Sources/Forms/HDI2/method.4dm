@@ -1,6 +1,5 @@
 
-C_COLLECTION:C1488($res)
-C_LONGINT:C283($n; $i)
+var $n; $i : Integer
 
 Case of 
 		
@@ -38,8 +37,9 @@ Case of
 		initPages
 		
 		//Used in decorateGamer method
-		Form:C1466.redDecorate:=New object:C1471("fill"; "#FFC0C0")
-		Form:C1466.blueDecorate:=New object:C1471("fill"; "#b8d6ef")
+		//colors resolved from hidden reference rectangles (see styleSheets.css), so they follow light/dark mode
+		Form:C1466.redDecorate:=New object:C1471("fill"; RGBToHex(getRefColor("refRowRed")))
+		Form:C1466.blueDecorate:=New object:C1471("fill"; RGBToHex(getRefColor("refRowBlue")))
 		
 		//Used in decorateGamerInTeam method
 		Form:C1466.boldDecorate:=New object:C1471("fontWeight"; "bold")

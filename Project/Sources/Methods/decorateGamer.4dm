@@ -1,4 +1,4 @@
-//%attributes = {}
+//%attributes = {"invisible":true}
 //****************************************//
 // Meta attribute
 //
@@ -11,14 +11,12 @@
 // disabled:  True or False 
 //****************************************//
 
-C_OBJECT:C1216($gamer; $0; $1; $result)
+#DECLARE($gamer : Object)->$result : Object
 
 If (btnTrace)
 	TRACE:C157
 End if 
 
-
-$gamer:=$1
 
 Case of 
 		
@@ -32,7 +30,4 @@ Case of
 		$result:=Form:C1466.blueDecorate  //Fill in blue the line in the list box
 		
 End case 
-
-
-$0:=$result
 

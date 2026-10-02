@@ -1,4 +1,4 @@
-C_OBJECT:C1216($gamer; $status)
+var $gamer; $status : Object
 
 If (btnTrace)
 	TRACE:C157

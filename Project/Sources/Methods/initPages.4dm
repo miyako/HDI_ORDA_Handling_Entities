@@ -1,6 +1,6 @@
-//%attributes = {}
+//%attributes = {"invisible":true}
 ARRAY LONGINT:C221(_sliceSizes; 12)
-C_LONGINT:C283(r1; r2; $i)
+var $i : Integer
 
 //Business logic related to ORDA
 
@@ -22,8 +22,8 @@ OBJECT SET ENABLED:C1123(*; "RankIn@"; False:C215)
 
 r1:=1
 r2:=0
-OBJECT SET TITLE:C194(*; "btnViewFirst"; "View first in red team")
-OBJECT SET TITLE:C194(*; "btnViewLast"; "View last in red team")
+OBJECT SET TITLE:C194(*; "btnViewFirst"; Localized string("BtnViewFirstRed"))
+OBJECT SET TITLE:C194(*; "btnViewLast"; Localized string("BtnViewLastRed"))
 
 Form:C1466.rankInTeam:=""
 Form:C1466.rankInGamers:=""

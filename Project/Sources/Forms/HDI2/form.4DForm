@@ -37,6 +37,42 @@
 					"events": [
 						"onClick"
 					]
+				},
+				"refRowRed": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 1,
+					"height": 1,
+					"class": "ref-row-red",
+					"stroke": "transparent"
+				},
+				"refRowBlue": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 1,
+					"height": 1,
+					"class": "ref-row-blue",
+					"stroke": "transparent"
+				},
+				"refLabelRed": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 1,
+					"height": 1,
+					"class": "ref-label-red",
+					"stroke": "transparent"
+				},
+				"refLabelBlue": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 1,
+					"height": 1,
+					"class": "ref-label-blue",
+					"stroke": "transparent"
 				}
 			}
 		},
@@ -60,7 +96,8 @@
 					"dropping": "custom",
 					"events": [
 						"onDataChange"
-					]
+					],
+					"stroke": "automatic"
 				},
 				"information3": {
 					"type": "input",
@@ -80,7 +117,8 @@
 					"dropping": "custom",
 					"events": [
 						"onDataChange"
-					]
+					],
+					"stroke": "automatic"
 				}
 			}
 		},
@@ -93,16 +131,16 @@
 					"width": 133,
 					"height": 21,
 					"dataSource": "r1",
-					"text": "Red team",
+					"text": ":xliff:TeamRed",
 					"fontFamily": "System Font",
 					"fontSize": 14,
-					"stroke": "#FF0000",
 					"focusable": false,
 					"radioGroup": "Groupe42",
 					"method": "ObjectMethods/Radio Button.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "red-text"
 				},
 				"Radio Button1": {
 					"type": "radio",
@@ -111,16 +149,16 @@
 					"width": 133,
 					"height": 21,
 					"dataSource": "r2",
-					"text": "Blue team",
+					"text": ":xliff:TeamBlue",
 					"fontFamily": "System Font",
 					"fontSize": 14,
-					"stroke": "#1E90FF",
 					"focusable": false,
 					"radioGroup": "Groupe42",
 					"method": "ObjectMethods/Radio Button1.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "blue-text"
 				},
 				"Round Rectangle": {
 					"type": "rectangle",
@@ -128,9 +166,9 @@
 					"left": 652,
 					"width": 310,
 					"height": 340,
-					"fill": "#C0C0C0",
 					"stroke": "transparent",
-					"borderRadius": 5
+					"borderRadius": 5,
+					"class": "panel"
 				},
 				"processUpdateContactButtonDirection1": {
 					"type": "input",
@@ -150,7 +188,8 @@
 					"dropping": "custom",
 					"events": [
 						"onDataChange"
-					]
+					],
+					"stroke": "automatic"
 				},
 				"Text6": {
 					"type": "text",
@@ -161,7 +200,8 @@
 					"fontFamily": "System Font",
 					"fontSize": 14,
 					"fontWeight": "bold",
-					"text": "Gamers"
+					"text": ":xliff:HDI2_Gamers",
+					"stroke": "automatic"
 				},
 				"Text": {
 					"type": "text",
@@ -170,7 +210,8 @@
 					"width": 1,
 					"height": 17,
 					"fontWeight": "bold",
-					"text": "Eats meat"
+					"text": ":xliff:HDI2_EatsMeat",
+					"stroke": "automatic"
 				},
 				"BlueGamers": {
 					"type": "listbox",
@@ -190,7 +231,6 @@
 					"scrollbarHorizontal": "automatic",
 					"horizontalLineStroke": "transparent",
 					"verticalLineStroke": "transparent",
-					"stroke": "#696969",
 					"columns": [
 						{
 							"name": "Column18",
@@ -198,9 +238,6 @@
 							"width": 100,
 							"minWidth": 10,
 							"maxWidth": 32000,
-							"stroke": "#696969",
-							"fill": "automatic",
-							"alternateFill": "automatic",
 							"textAlign": "automatic",
 							"verticalAlign": "automatic",
 							"events": [
@@ -209,18 +246,18 @@
 							],
 							"header": {
 								"name": "Header18",
-								"text": "First name",
-								"stroke": "#696969",
+								"text": ":xliff:HDI2_FirstName",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
 							},
 							"footer": {
 								"name": "Footer13",
-								"stroke": "#696969",
 								"fill": "automatic",
 								"textAlign": "automatic",
-								"verticalAlign": "automatic"
-							}
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "Column19",
@@ -228,9 +265,6 @@
 							"width": 100,
 							"minWidth": 10,
 							"maxWidth": 32000,
-							"stroke": "#696969",
-							"fill": "automatic",
-							"alternateFill": "automatic",
 							"textAlign": "automatic",
 							"verticalAlign": "automatic",
 							"events": [
@@ -239,20 +273,23 @@
 							],
 							"header": {
 								"name": "Header19",
-								"text": "Last name",
-								"stroke": "#696969",
+								"text": ":xliff:HDI2_LastName",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
 							},
 							"footer": {
 								"name": "Footer14",
-								"stroke": "#696969",
 								"fill": "automatic",
 								"textAlign": "automatic",
-								"verticalAlign": "automatic"
-							}
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
 						}
-					]
+					],
+					"class": "muted",
+					"fill": "automatic",
+					"alternateFill": "automaticAlternate"
 				},
 				"RedGamers": {
 					"type": "listbox",
@@ -271,7 +308,6 @@
 					"scrollbarHorizontal": "automatic",
 					"horizontalLineStroke": "transparent",
 					"verticalLineStroke": "transparent",
-					"stroke": "#696969",
 					"columns": [
 						{
 							"name": "Column6",
@@ -280,9 +316,6 @@
 							"minWidth": 10,
 							"maxWidth": 32000,
 							"enterable": false,
-							"stroke": "#696969",
-							"fill": "automatic",
-							"alternateFill": "automatic",
 							"textAlign": "automatic",
 							"verticalAlign": "automatic",
 							"events": [
@@ -290,18 +323,18 @@
 							],
 							"header": {
 								"name": "Header5",
-								"text": "First name",
-								"stroke": "#696969",
+								"text": ":xliff:HDI2_FirstName",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
 							},
 							"footer": {
 								"name": "Footer3",
-								"stroke": "#696969",
 								"fill": "automatic",
 								"textAlign": "automatic",
-								"verticalAlign": "automatic"
-							}
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "Column7",
@@ -309,9 +342,6 @@
 							"width": 100,
 							"minWidth": 10,
 							"maxWidth": 32000,
-							"stroke": "#696969",
-							"fill": "automatic",
-							"alternateFill": "automatic",
 							"textAlign": "automatic",
 							"verticalAlign": "automatic",
 							"events": [
@@ -320,20 +350,23 @@
 							],
 							"header": {
 								"name": "Header6",
-								"text": "Last name",
-								"stroke": "#696969",
+								"text": ":xliff:HDI2_LastName",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
 							},
 							"footer": {
 								"name": "Footer4",
-								"stroke": "#696969",
 								"fill": "automatic",
 								"textAlign": "automatic",
-								"verticalAlign": "automatic"
-							}
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
 						}
-					]
+					],
+					"class": "muted",
+					"fill": "automatic",
+					"alternateFill": "automaticAlternate"
 				},
 				"Check Box4": {
 					"type": "checkbox",
@@ -343,7 +376,7 @@
 					"height": 20,
 					"sizingY": "move",
 					"dataSource": "btnTrace",
-					"text": "Trace",
+					"text": ":xliff:HDI2_Trace",
 					"focusable": false,
 					"events": [
 						"onClick"
@@ -354,26 +387,26 @@
 					"top": 246,
 					"left": 630,
 					"width": 160,
-					"height": 20,
-					"text": "View first in Red team",
+					"text": ":xliff:BtnViewFirstRed",
 					"focusable": false,
 					"method": "ObjectMethods/btnViewFirst.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"btnViewLast": {
 					"type": "button",
 					"top": 246,
 					"left": 810,
 					"width": 160,
-					"height": 20,
-					"text": "View last in Red team",
+					"text": ":xliff:BtnViewLastRed",
 					"focusable": false,
 					"method": "ObjectMethods/btnViewLast.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Variable": {
 					"type": "input",
@@ -389,7 +422,8 @@
 					"borderStyle": "none",
 					"enterable": false,
 					"dragging": "none",
-					"dropping": "none"
+					"dropping": "none",
+					"stroke": "automatic"
 				},
 				"Variable1": {
 					"type": "input",
@@ -405,33 +439,34 @@
 					"borderStyle": "none",
 					"enterable": false,
 					"dragging": "none",
-					"dropping": "none"
+					"dropping": "none",
+					"stroke": "automatic"
 				},
 				"AddToBlueButton": {
 					"type": "button",
 					"top": 416,
 					"left": 280,
 					"width": 100,
-					"height": 20,
-					"text": "Add to Blue ",
+					"text": ":xliff:HDI2_AddToBlue",
 					"focusable": false,
 					"method": "ObjectMethods/AddToBlueButton.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"AddToRedButton": {
 					"type": "button",
 					"top": 256,
 					"left": 280,
 					"width": 100,
-					"height": 20,
-					"text": "Add to Red",
+					"text": ":xliff:HDI2_AddToRed",
 					"focusable": false,
 					"method": "ObjectMethods/AddToRedButton.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Variable2": {
 					"type": "input",
@@ -447,72 +482,73 @@
 					"borderStyle": "none",
 					"enterable": false,
 					"dragging": "none",
-					"dropping": "none"
+					"dropping": "none",
+					"stroke": "automatic"
 				},
 				"NavButton1": {
 					"type": "button",
 					"top": 346,
 					"left": 690,
 					"width": 50,
-					"height": 20,
 					"text": "<<",
 					"focusable": false,
 					"method": "ObjectMethods/NavButton1.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"NavButton4": {
 					"type": "button",
 					"top": 346,
 					"left": 870,
 					"width": 50,
-					"height": 20,
 					"text": ">>",
 					"focusable": false,
 					"method": "ObjectMethods/NavButton4.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"NavButton2": {
 					"type": "button",
 					"top": 346,
 					"left": 750,
 					"width": 50,
-					"height": 20,
 					"text": "<",
 					"focusable": false,
 					"method": "ObjectMethods/NavButton2.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"NavButton3": {
 					"type": "button",
 					"top": 346,
 					"left": 810,
 					"width": 50,
-					"height": 20,
 					"text": ">",
 					"focusable": false,
 					"method": "ObjectMethods/NavButton3.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Button15": {
 					"type": "button",
 					"top": 536,
 					"left": 40,
 					"width": 280,
-					"height": 20,
-					"text": "To which team does the gamer belong?",
+					"text": ":xliff:HDI2_WhichTeam",
 					"focusable": false,
 					"method": "ObjectMethods/Button15.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Variable7": {
 					"type": "input",
@@ -527,7 +563,9 @@
 					"dropping": "custom",
 					"events": [
 						"onDataChange"
-					]
+					],
+					"stroke": "automatic",
+					"fill": "automatic"
 				},
 				"Lbl_1": {
 					"type": "text",
@@ -535,9 +573,9 @@
 					"left": 699,
 					"width": 96,
 					"height": 17,
-					"stroke": "#FF0000",
 					"textAlign": "right",
-					"text": "First name"
+					"text": ":xliff:HDI2_FirstName",
+					"class": "red-text"
 				},
 				"Lbl_2": {
 					"type": "text",
@@ -545,9 +583,9 @@
 					"left": 699,
 					"width": 96,
 					"height": 17,
-					"stroke": "#FF0000",
 					"textAlign": "right",
-					"text": "Last name"
+					"text": ":xliff:HDI2_LastName",
+					"class": "red-text"
 				},
 				"Lbl_3": {
 					"type": "text",
@@ -555,22 +593,22 @@
 					"left": 741,
 					"width": 54,
 					"height": 17,
-					"stroke": "#FF0000",
 					"textAlign": "right",
-					"text": "Level"
+					"text": ":xliff:HDI2_Level",
+					"class": "red-text"
 				},
 				"RankInMyTeam": {
 					"type": "button",
 					"top": 573,
 					"left": 678,
 					"width": 180,
-					"height": 20,
-					"text": "Rank in team?",
+					"text": ":xliff:HDI2_RankInTeam",
 					"focusable": false,
 					"method": "ObjectMethods/RankInMyTeam.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Variable8": {
 					"type": "input",
@@ -587,7 +625,8 @@
 					"dropping": "custom",
 					"events": [
 						"onDataChange"
-					]
+					],
+					"stroke": "automatic"
 				},
 				"Variable3": {
 					"type": "input",
@@ -605,7 +644,8 @@
 					"enterable": false,
 					"contextMenu": "none",
 					"dragging": "none",
-					"dropping": "none"
+					"dropping": "none",
+					"stroke": "automatic"
 				},
 				"Lbl_4": {
 					"type": "text",
@@ -613,9 +653,9 @@
 					"left": 661,
 					"width": 134,
 					"height": 17,
-					"stroke": "#FF0000",
 					"textAlign": "right",
-					"text": "Years of experience"
+					"text": ":xliff:HDI2_YearsOfExperience",
+					"class": "red-text"
 				},
 				"listBoxGamers": {
 					"type": "listbox",
@@ -633,7 +673,7 @@
 					"metaSource": "decorateGamer(This:C1470)",
 					"selectionMode": "single",
 					"scrollbarHorizontal": "automatic",
-					"stroke": "#000000",
+					"stroke": "automatic",
 					"method": "ObjectMethods/listBoxGamers.4dm",
 					"events": [
 						"onSelectionChange"
@@ -647,25 +687,22 @@
 							"maxWidth": 32000,
 							"resizable": false,
 							"enterable": false,
-							"stroke": "#000000",
-							"fill": "automatic",
-							"alternateFill": "automatic",
 							"textAlign": "automatic",
 							"verticalAlign": "automatic",
 							"header": {
 								"name": "Header1",
-								"text": "First name",
-								"stroke": "#000000",
+								"text": ":xliff:HDI2_FirstName",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
 							},
 							"footer": {
 								"name": "Footer1",
-								"stroke": "#000000",
 								"fill": "automatic",
 								"textAlign": "automatic",
-								"verticalAlign": "automatic"
-							}
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "ColName",
@@ -675,40 +712,39 @@
 							"maxWidth": 32000,
 							"resizable": false,
 							"enterable": false,
-							"stroke": "#000000",
-							"fill": "automatic",
-							"alternateFill": "automatic",
 							"textAlign": "automatic",
 							"verticalAlign": "automatic",
 							"header": {
 								"name": "Header2",
-								"text": "Last name",
-								"stroke": "#000000",
+								"text": ":xliff:HDI2_LastName",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
 							},
 							"footer": {
 								"name": "Footer2",
-								"stroke": "#000000",
 								"fill": "automatic",
 								"textAlign": "automatic",
-								"verticalAlign": "automatic"
-							}
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
 						}
-					]
+					],
+					"fill": "automatic",
+					"alternateFill": "automaticAlternate"
 				},
 				"RankInGamers": {
 					"type": "button",
 					"top": 626,
 					"left": 678,
 					"width": 180,
-					"height": 20,
-					"text": "Overall rank?",
+					"text": ":xliff:HDI2_OverallRank",
 					"focusable": false,
 					"method": "ObjectMethods/RankInGamers.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Variable4": {
 					"type": "input",
@@ -725,7 +761,8 @@
 					"dropping": "custom",
 					"events": [
 						"onDataChange"
-					]
+					],
+					"stroke": "automatic"
 				},
 				"processUpdateContactButtonDirection2": {
 					"type": "input",
@@ -745,7 +782,8 @@
 					"dropping": "custom",
 					"events": [
 						"onDataChange"
-					]
+					],
+					"stroke": "automatic"
 				},
 				"processUpdateContactButtonDirection3": {
 					"type": "input",
@@ -765,7 +803,8 @@
 					"dropping": "custom",
 					"events": [
 						"onDataChange"
-					]
+					],
+					"stroke": "automatic"
 				},
 				"processUpdateContactButtonDirection4": {
 					"type": "input",
@@ -785,7 +824,8 @@
 					"dropping": "custom",
 					"events": [
 						"onDataChange"
-					]
+					],
+					"stroke": "automatic"
 				},
 				"processUpdateContactButtonDirection7": {
 					"type": "input",
@@ -804,7 +844,8 @@
 					"dropping": "custom",
 					"events": [
 						"onDataChange"
-					]
+					],
+					"stroke": "automatic"
 				},
 				"processUpdateContactButtonDirection8": {
 					"type": "input",
@@ -823,7 +864,8 @@
 					"dropping": "custom",
 					"events": [
 						"onDataChange"
-					]
+					],
+					"stroke": "automatic"
 				},
 				"processUpdateContactButtonDirection9": {
 					"type": "input",
@@ -842,7 +884,8 @@
 					"dropping": "custom",
 					"events": [
 						"onDataChange"
-					]
+					],
+					"stroke": "automatic"
 				},
 				"processUpdateContactButtonDirection10": {
 					"type": "input",
@@ -862,7 +905,8 @@
 					"dropping": "custom",
 					"events": [
 						"onDataChange"
-					]
+					],
+					"stroke": "automatic"
 				},
 				"processUpdateContactButtonDirection11": {
 					"type": "input",
@@ -882,7 +926,8 @@
 					"dropping": "custom",
 					"events": [
 						"onDataChange"
-					]
+					],
+					"stroke": "automatic"
 				},
 				"processUpdateContactButtonDirection5": {
 					"type": "input",
@@ -902,7 +947,8 @@
 					"dropping": "custom",
 					"events": [
 						"onDataChange"
-					]
+					],
+					"stroke": "automatic"
 				},
 				"information1": {
 					"type": "input",
@@ -922,7 +968,8 @@
 					"dropping": "custom",
 					"events": [
 						"onDataChange"
-					]
+					],
+					"stroke": "automatic"
 				}
 			}
 		},
@@ -946,7 +993,8 @@
 					"dropping": "custom",
 					"events": [
 						"onDataChange"
-					]
+					],
+					"stroke": "automatic"
 				},
 				"Text14": {
 					"type": "text",
@@ -955,7 +1003,8 @@
 					"width": 1,
 					"height": 17,
 					"fontWeight": "bold",
-					"text": "Eats meat"
+					"text": ":xliff:HDI2_EatsMeat",
+					"stroke": "automatic"
 				},
 				"Text8": {
 					"type": "text",
@@ -966,7 +1015,8 @@
 					"fontFamily": "System Font",
 					"fontSize": 14,
 					"fontWeight": "bold",
-					"text": "Ping Pong table parts"
+					"text": ":xliff:HDI2_PingPongTableParts",
+					"stroke": "automatic"
 				},
 				"Gathered_Parts_LB": {
 					"type": "listbox",
@@ -983,7 +1033,7 @@
 					"dataSource": "Form:C1466.gatheredParts",
 					"selectionMode": "none",
 					"scrollbarHorizontal": "automatic",
-					"stroke": "#000000",
+					"stroke": "automatic",
 					"columns": [
 						{
 							"name": "Column3",
@@ -993,27 +1043,26 @@
 							"maxWidth": 32000,
 							"resizable": false,
 							"enterable": false,
-							"stroke": "#000000",
-							"fill": "automatic",
-							"alternateFill": "automatic",
 							"textAlign": "automatic",
 							"verticalAlign": "automatic",
 							"header": {
 								"name": "Header3",
-								"text": "Name",
-								"stroke": "#000000",
+								"text": ":xliff:HDI2_Name",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
 							},
 							"footer": {
 								"name": "Footer5",
-								"stroke": "#000000",
 								"fill": "automatic",
 								"textAlign": "automatic",
-								"verticalAlign": "automatic"
-							}
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
 						}
-					]
+					],
+					"fill": "automatic",
+					"alternateFill": "automaticAlternate"
 				},
 				"Gathered_Parts_Title": {
 					"type": "text",
@@ -1021,11 +1070,11 @@
 					"left": 630,
 					"width": 373,
 					"height": 35,
-					"stroke": "#000000",
+					"stroke": "automatic",
 					"fontFamily": "System Font",
 					"fontSize": 14,
 					"fontWeight": "bold",
-					"text": "The parts will be gathered in this order"
+					"text": ":xliff:HDI2_PartsGatheredOrder"
 				},
 				"Parts_LB": {
 					"type": "listbox",
@@ -1042,7 +1091,7 @@
 					"dataSource": "Form:C1466.parts",
 					"selectionMode": "none",
 					"scrollbarHorizontal": "automatic",
-					"stroke": "#000000",
+					"stroke": "automatic",
 					"columns": [
 						{
 							"name": "Column5",
@@ -1052,25 +1101,22 @@
 							"maxWidth": 32000,
 							"resizable": false,
 							"enterable": false,
-							"stroke": "automatic",
-							"fill": "automatic",
-							"alternateFill": "automatic",
 							"textAlign": "automatic",
 							"verticalAlign": "automatic",
 							"header": {
 								"name": "Header7",
-								"text": "Name",
-								"stroke": "#000000",
+								"text": ":xliff:HDI2_Name",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
 							},
 							"footer": {
 								"name": "Footer7",
-								"stroke": "#000000",
 								"fill": "automatic",
 								"textAlign": "automatic",
-								"verticalAlign": "automatic"
-							}
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "Column8",
@@ -1080,27 +1126,26 @@
 							"maxWidth": 32000,
 							"resizable": false,
 							"enterable": false,
-							"stroke": "automatic",
-							"fill": "automatic",
-							"alternateFill": "automatic",
 							"textAlign": "automatic",
 							"verticalAlign": "automatic",
 							"header": {
 								"name": "Header8",
-								"text": "Quantity",
-								"stroke": "#000000",
+								"text": ":xliff:HDI2_Quantity",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
 							},
 							"footer": {
 								"name": "Footer8",
-								"stroke": "#000000",
 								"fill": "automatic",
 								"textAlign": "automatic",
-								"verticalAlign": "automatic"
-							}
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
 						}
-					]
+					],
+					"fill": "automatic",
+					"alternateFill": "automaticAlternate"
 				},
 				"Gathered_Parts_field": {
 					"type": "input",
@@ -1115,20 +1160,22 @@
 					"dropping": "custom",
 					"events": [
 						"onDataChange"
-					]
+					],
+					"stroke": "automatic",
+					"fill": "automatic"
 				},
 				"Gathered_Parts_Button": {
 					"type": "button",
 					"top": 620,
 					"left": 630,
 					"width": 230,
-					"height": 20,
-					"text": "Am I an ordered entity selection?",
+					"text": ":xliff:HDI2_AmIOrdered",
 					"focusable": false,
 					"method": "ObjectMethods/Gathered_Parts_Button.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Gathered_Parts_explanations": {
 					"type": "input",
@@ -1147,20 +1194,21 @@
 					"dropping": "custom",
 					"events": [
 						"onDataChange"
-					]
+					],
+					"stroke": "automatic"
 				},
 				"ViewWinners": {
 					"type": "button",
 					"top": 280,
 					"left": 370,
 					"width": 250,
-					"height": 20,
-					"text": "In which order will I use them?",
+					"text": ":xliff:HDI2_WhichOrder",
 					"focusable": false,
 					"method": "ObjectMethods/ViewWinners.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Check Box1": {
 					"type": "checkbox",
@@ -1170,7 +1218,7 @@
 					"height": 20,
 					"sizingY": "move",
 					"dataSource": "btnTrace",
-					"text": "Trace",
+					"text": ":xliff:HDI2_Trace",
 					"focusable": false,
 					"events": [
 						"onClick"
@@ -1195,7 +1243,7 @@
 					"dataSource": "Form:C1466.gamers",
 					"selectionMode": "none",
 					"scrollbarHorizontal": "automatic",
-					"stroke": "#000000",
+					"stroke": "automatic",
 					"columns": [
 						{
 							"name": "Colonne2",
@@ -1205,25 +1253,22 @@
 							"maxWidth": 32000,
 							"resizable": false,
 							"enterable": false,
-							"stroke": "#000000",
-							"fill": "automatic",
-							"alternateFill": "automatic",
 							"textAlign": "center",
 							"verticalAlign": "automatic",
 							"header": {
 								"name": "Entête2",
-								"text": "Rank",
-								"stroke": "#000000",
+								"text": ":xliff:HDI2_Rank",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
 							},
 							"footer": {
 								"name": "Pied2",
-								"stroke": "#000000",
 								"fill": "automatic",
 								"textAlign": "automatic",
-								"verticalAlign": "automatic"
-							}
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "Column2",
@@ -1233,25 +1278,22 @@
 							"maxWidth": 32000,
 							"resizable": false,
 							"enterable": false,
-							"stroke": "#000000",
-							"fill": "automatic",
-							"alternateFill": "automatic",
 							"textAlign": "automatic",
 							"verticalAlign": "automatic",
 							"header": {
 								"name": "Header4",
-								"text": "First name",
-								"stroke": "#000000",
+								"text": ":xliff:HDI2_FirstName",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
 							},
 							"footer": {
 								"name": "Footer6",
-								"stroke": "#000000",
 								"fill": "automatic",
 								"textAlign": "automatic",
-								"verticalAlign": "automatic"
-							}
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "ColName1",
@@ -1261,25 +1303,22 @@
 							"maxWidth": 32000,
 							"resizable": false,
 							"enterable": false,
-							"stroke": "#000000",
-							"fill": "automatic",
-							"alternateFill": "automatic",
 							"textAlign": "automatic",
 							"verticalAlign": "automatic",
 							"header": {
 								"name": "Header13",
-								"text": "Last name",
-								"stroke": "#000000",
+								"text": ":xliff:HDI2_LastName",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
 							},
 							"footer": {
 								"name": "Footer15",
-								"stroke": "#000000",
 								"fill": "automatic",
 								"textAlign": "automatic",
-								"verticalAlign": "automatic"
-							}
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "Colonne1",
@@ -1289,25 +1328,22 @@
 							"maxWidth": 32000,
 							"resizable": false,
 							"enterable": false,
-							"stroke": "#000000",
-							"fill": "automatic",
-							"alternateFill": "automatic",
 							"textAlign": "center",
 							"verticalAlign": "automatic",
 							"header": {
 								"name": "Entête1",
-								"text": "Level",
-								"stroke": "#000000",
+								"text": ":xliff:HDI2_Level",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
 							},
 							"footer": {
 								"name": "Pied1",
-								"stroke": "#000000",
 								"fill": "automatic",
 								"textAlign": "automatic",
-								"verticalAlign": "automatic"
-							}
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "Colonne3",
@@ -1317,40 +1353,39 @@
 							"maxWidth": 32000,
 							"resizable": false,
 							"enterable": false,
-							"stroke": "#000000",
-							"fill": "automatic",
-							"alternateFill": "automatic",
 							"textAlign": "center",
 							"verticalAlign": "automatic",
 							"header": {
 								"name": "Entête3",
-								"text": "Years of experience",
-								"stroke": "#000000",
+								"text": ":xliff:HDI2_YearsOfExperience",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
 							},
 							"footer": {
 								"name": "Pied3",
-								"stroke": "#000000",
 								"fill": "automatic",
 								"textAlign": "automatic",
-								"verticalAlign": "automatic"
-							}
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
 						}
-					]
+					],
+					"fill": "automatic",
+					"alternateFill": "automaticAlternate"
 				},
 				"ViewWinners1": {
 					"type": "button",
 					"top": 540,
 					"left": 40,
 					"width": 250,
-					"height": 20,
-					"text": "Increase level for all gamers",
+					"text": ":xliff:HDI2_IncreaseLevel",
 					"focusable": false,
 					"method": "ObjectMethods/ViewWinners1.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Variable5": {
 					"type": "input",
@@ -1362,7 +1397,9 @@
 					"dataSourceTypeHint": "number",
 					"contextMenu": "none",
 					"dragging": "none",
-					"dropping": "none"
+					"dropping": "none",
+					"stroke": "automatic",
+					"fill": "automatic"
 				},
 				"Texte1": {
 					"type": "text",
@@ -1371,20 +1408,21 @@
 					"width": 150,
 					"height": 20,
 					"textAlign": "right",
-					"text": "Get gamer with rank:"
+					"text": ":xliff:HDI2_GetGamerWithRank",
+					"stroke": "automatic"
 				},
 				"GetGamerButton": {
 					"type": "button",
 					"top": 246,
 					"left": 770,
 					"width": 70,
-					"height": 20,
-					"text": "OK",
+					"text": ":xliff:CommonOK",
 					"focusable": false,
 					"method": "ObjectMethods/GetGamerButton.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Round Rectangle1": {
 					"type": "rectangle",
@@ -1392,9 +1430,9 @@
 					"left": 540,
 					"width": 370,
 					"height": 133,
-					"fill": "#C0C0C0",
 					"stroke": "transparent",
-					"borderRadius": 5
+					"borderRadius": 5,
+					"class": "panel"
 				},
 				"Variable9": {
 					"type": "input",
@@ -1409,7 +1447,8 @@
 					"borderStyle": "none",
 					"enterable": false,
 					"dragging": "none",
-					"dropping": "none"
+					"dropping": "none",
+					"stroke": "automatic"
 				},
 				"Variable10": {
 					"type": "input",
@@ -1424,7 +1463,8 @@
 					"borderStyle": "none",
 					"enterable": false,
 					"dragging": "none",
-					"dropping": "none"
+					"dropping": "none",
+					"stroke": "automatic"
 				},
 				"Variable11": {
 					"type": "input",
@@ -1439,7 +1479,8 @@
 					"borderStyle": "none",
 					"enterable": false,
 					"dragging": "none",
-					"dropping": "none"
+					"dropping": "none",
+					"stroke": "automatic"
 				},
 				"loadedGamerFirstName": {
 					"type": "text",
@@ -1447,10 +1488,10 @@
 					"left": 582,
 					"width": 108,
 					"height": 17,
-					"stroke": "#000000",
+					"stroke": "automatic",
 					"textAlign": "right",
 					"fontWeight": "bold",
-					"text": "First name"
+					"text": ":xliff:HDI2_FirstName"
 				},
 				"loadedGamerLastName": {
 					"type": "text",
@@ -1458,10 +1499,10 @@
 					"left": 582,
 					"width": 108,
 					"height": 17,
-					"stroke": "#000000",
+					"stroke": "automatic",
 					"textAlign": "right",
 					"fontWeight": "bold",
-					"text": "Last name"
+					"text": ":xliff:HDI2_LastName"
 				},
 				"loadedGamerLevel": {
 					"type": "text",
@@ -1469,10 +1510,10 @@
 					"left": 624,
 					"width": 66,
 					"height": 17,
-					"stroke": "#000000",
+					"stroke": "automatic",
 					"textAlign": "right",
 					"fontWeight": "bold",
-					"text": "Level"
+					"text": ":xliff:HDI2_Level"
 				},
 				"Variable13": {
 					"type": "input",
@@ -1489,7 +1530,8 @@
 					"enterable": false,
 					"contextMenu": "none",
 					"dragging": "none",
-					"dropping": "none"
+					"dropping": "none",
+					"stroke": "automatic"
 				},
 				"loadedGamerYearsExp": {
 					"type": "text",
@@ -1497,10 +1539,10 @@
 					"left": 544,
 					"width": 146,
 					"height": 17,
-					"stroke": "#000000",
+					"stroke": "automatic",
 					"textAlign": "right",
 					"fontWeight": "bold",
-					"text": "Years of experience"
+					"text": ":xliff:HDI2_YearsOfExperience"
 				},
 				"Text3": {
 					"type": "text",
@@ -1511,7 +1553,8 @@
 					"fontFamily": "System Font",
 					"fontSize": 14,
 					"fontWeight": "bold",
-					"text": "Gamers"
+					"text": ":xliff:HDI2_Gamers",
+					"stroke": "automatic"
 				},
 				"forEachExplanations": {
 					"type": "input",
@@ -1531,7 +1574,8 @@
 					"dropping": "custom",
 					"events": [
 						"onDataChange"
-					]
+					],
+					"stroke": "automatic"
 				},
 				"getExplanations": {
 					"type": "input",
@@ -1551,7 +1595,8 @@
 					"dropping": "custom",
 					"events": [
 						"onDataChange"
-					]
+					],
+					"stroke": "automatic"
 				},
 				"information6": {
 					"type": "input",
@@ -1571,7 +1616,8 @@
 					"dropping": "custom",
 					"events": [
 						"onDataChange"
-					]
+					],
+					"stroke": "automatic"
 				},
 				"Check Box3": {
 					"type": "checkbox",
@@ -1581,7 +1627,7 @@
 					"height": 20,
 					"sizingY": "move",
 					"dataSource": "btnTrace",
-					"text": "Trace",
+					"text": ":xliff:HDI2_Trace",
 					"focusable": false,
 					"events": [
 						"onClick"
@@ -1609,7 +1655,8 @@
 					"dropping": "custom",
 					"events": [
 						"onDataChange"
-					]
+					],
+					"stroke": "automatic"
 				},
 				"Text13": {
 					"type": "text",
@@ -1618,7 +1665,8 @@
 					"width": 1,
 					"height": 17,
 					"fontWeight": "bold",
-					"text": "Eats meat"
+					"text": ":xliff:HDI2_EatsMeat",
+					"stroke": "automatic"
 				},
 				"Text16": {
 					"type": "text",
@@ -1629,7 +1677,8 @@
 					"fontFamily": "System Font",
 					"fontSize": 14,
 					"fontWeight": "bold",
-					"text": "Gamers"
+					"text": ":xliff:HDI2_Gamers",
+					"stroke": "automatic"
 				},
 				"SmallList": {
 					"type": "listbox",
@@ -1646,7 +1695,7 @@
 					"dataSource": "Form:C1466.smallList",
 					"selectionMode": "none",
 					"scrollbarHorizontal": "automatic",
-					"stroke": "#000000",
+					"stroke": "automatic",
 					"columns": [
 						{
 							"name": "Column9",
@@ -1656,25 +1705,22 @@
 							"maxWidth": 32000,
 							"resizable": false,
 							"enterable": false,
-							"stroke": "#000000",
-							"fill": "automatic",
-							"alternateFill": "automatic",
 							"textAlign": "automatic",
 							"verticalAlign": "automatic",
 							"header": {
 								"name": "Header9",
-								"text": "First name",
-								"stroke": "#000000",
+								"text": ":xliff:HDI2_FirstName",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
 							},
 							"footer": {
 								"name": "Footer9",
-								"stroke": "#000000",
 								"fill": "automatic",
 								"textAlign": "automatic",
-								"verticalAlign": "automatic"
-							}
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "Column10",
@@ -1684,27 +1730,26 @@
 							"maxWidth": 32000,
 							"resizable": false,
 							"enterable": false,
-							"stroke": "#000000",
-							"fill": "automatic",
-							"alternateFill": "automatic",
 							"textAlign": "automatic",
 							"verticalAlign": "automatic",
 							"header": {
 								"name": "Header10",
-								"text": "Last name",
-								"stroke": "#000000",
+								"text": ":xliff:HDI2_LastName",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
 							},
 							"footer": {
 								"name": "Footer10",
-								"stroke": "#000000",
 								"fill": "automatic",
 								"textAlign": "automatic",
-								"verticalAlign": "automatic"
-							}
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
 						}
-					]
+					],
+					"fill": "automatic",
+					"alternateFill": "automaticAlternate"
 				},
 				"Text17": {
 					"type": "text",
@@ -1712,11 +1757,11 @@
 					"left": 600,
 					"width": 220,
 					"height": 21,
-					"stroke": "#1E90FF",
 					"fontFamily": "System Font",
 					"fontSize": 14,
 					"fontWeight": "bold",
-					"text": "Small list"
+					"text": ":xliff:HDI2_SmallList",
+					"class": "blue-text"
 				},
 				"listBoxGamers1": {
 					"type": "listbox",
@@ -1734,7 +1779,7 @@
 					"currentItemSource": "Form:C1466.selectedWinner",
 					"selectionMode": "none",
 					"scrollbarHorizontal": "automatic",
-					"stroke": "#000000",
+					"stroke": "automatic",
 					"columns": [
 						{
 							"name": "Column11",
@@ -1744,25 +1789,22 @@
 							"maxWidth": 32000,
 							"resizable": false,
 							"enterable": false,
-							"stroke": "#000000",
-							"fill": "automatic",
-							"alternateFill": "automatic",
 							"textAlign": "automatic",
 							"verticalAlign": "automatic",
 							"header": {
 								"name": "Header11",
-								"text": "First name",
-								"stroke": "#000000",
+								"text": ":xliff:HDI2_FirstName",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
 							},
 							"footer": {
 								"name": "Footer11",
-								"stroke": "#000000",
 								"fill": "automatic",
 								"textAlign": "automatic",
-								"verticalAlign": "automatic"
-							}
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "Column12",
@@ -1772,9 +1814,6 @@
 							"maxWidth": 32000,
 							"resizable": false,
 							"enterable": false,
-							"stroke": "#000000",
-							"fill": "automatic",
-							"alternateFill": "automatic",
 							"textAlign": "automatic",
 							"verticalAlign": "automatic",
 							"events": [
@@ -1782,46 +1821,48 @@
 							],
 							"header": {
 								"name": "Header12",
-								"text": "Last name",
-								"stroke": "#000000",
+								"text": ":xliff:HDI2_LastName",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
 							},
 							"footer": {
 								"name": "Footer12",
-								"stroke": "#000000",
 								"fill": "automatic",
 								"textAlign": "automatic",
-								"verticalAlign": "automatic"
-							}
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
 						}
-					]
+					],
+					"fill": "automatic",
+					"alternateFill": "automaticAlternate"
 				},
 				"ViewPreviousButton": {
 					"type": "button",
 					"top": 580,
 					"left": 645,
 					"width": 130,
-					"height": 20,
-					"text": "View previous",
+					"text": ":xliff:HDI2_ViewPrevious",
 					"focusable": false,
 					"method": "ObjectMethods/ViewPreviousButton.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"ViewNextButton": {
 					"type": "button",
 					"top": 580,
 					"left": 785,
 					"width": 130,
-					"height": 20,
-					"text": "View next",
+					"text": ":xliff:HDI2_ViewNext",
 					"focusable": false,
 					"method": "ObjectMethods/ViewNextButton.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"processUpdateContactButtonDirection6": {
 					"type": "input",
@@ -1840,7 +1881,8 @@
 					"dropping": "custom",
 					"events": [
 						"onDataChange"
-					]
+					],
+					"stroke": "automatic"
 				},
 				"Popup Dropdown List": {
 					"type": "dropdown",
@@ -1865,7 +1907,8 @@
 					"fontFamily": "System Font",
 					"fontSize": 14,
 					"fontWeight": "bold",
-					"text": "Choose the slice size"
+					"text": ":xliff:HDI2_ChooseSliceSize",
+					"stroke": "automatic"
 				},
 				"Check Box2": {
 					"type": "checkbox",
@@ -1875,7 +1918,7 @@
 					"height": 20,
 					"sizingY": "move",
 					"dataSource": "btnTrace",
-					"text": "Trace",
+					"text": ":xliff:HDI2_Trace",
 					"focusable": false,
 					"events": [
 						"onClick"

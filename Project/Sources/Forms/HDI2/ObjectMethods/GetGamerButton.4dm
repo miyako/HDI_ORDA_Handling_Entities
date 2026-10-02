@@ -5,7 +5,7 @@ End if
 
 
 If ((Form:C1466.rank>12) | (Form:C1466.rank<=0))
-	ALERT:C41("Enter a rank between 1 and 12")
+	ALERT:C41(Localized string("AlertRankRange"))
 Else 
 	
 	//Load the entity according to its rank in the entity selection Form.gamers
