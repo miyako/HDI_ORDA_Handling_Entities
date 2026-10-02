@@ -1,0 +1,1895 @@
+{
+	"destination": "detailScreen",
+	"windowSizingX": "fixed",
+	"windowMinHeight": 720,
+	"windowMaxHeight": 32000,
+	"width": 1000,
+	"height": 720,
+	"menuBar": "Menu Bar #1",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Tab Control": {
+					"type": "tab",
+					"top": 20,
+					"left": 20,
+					"width": 960,
+					"height": 680,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "_TabTitles",
+					"dataSourceTypeHint": "arrayText",
+					"action": "gotoPage",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"information4": {
+					"type": "input",
+					"top": 370,
+					"left": 80,
+					"width": 800,
+					"height": 320,
+					"sizingX": "grow",
+					"dataSource": "_Descriptions{1}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"information3": {
+					"type": "input",
+					"top": 80,
+					"left": 80,
+					"width": 800,
+					"height": 280,
+					"sizingX": "grow",
+					"dataSource": "mainDescription",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Radio Button": {
+					"type": "radio",
+					"top": 222,
+					"left": 400,
+					"width": 133,
+					"height": 21,
+					"dataSource": "r1",
+					"text": "Red team",
+					"fontFamily": "System Font",
+					"fontSize": 14,
+					"stroke": "#FF0000",
+					"focusable": false,
+					"radioGroup": "Groupe42",
+					"method": "ObjectMethods/Radio Button.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Radio Button1": {
+					"type": "radio",
+					"top": 372,
+					"left": 400,
+					"width": 133,
+					"height": 21,
+					"dataSource": "r2",
+					"text": "Blue team",
+					"fontFamily": "System Font",
+					"fontSize": 14,
+					"stroke": "#1E90FF",
+					"focusable": false,
+					"radioGroup": "Groupe42",
+					"method": "ObjectMethods/Radio Button1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Round Rectangle": {
+					"type": "rectangle",
+					"top": 356,
+					"left": 652,
+					"width": 310,
+					"height": 340,
+					"fill": "#C0C0C0",
+					"stroke": "transparent",
+					"borderRadius": 5
+				},
+				"processUpdateContactButtonDirection1": {
+					"type": "input",
+					"top": 566,
+					"left": 40,
+					"width": 429,
+					"height": 49,
+					"sizingX": "grow",
+					"dataSource": "_Directions{2}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text6": {
+					"type": "text",
+					"top": 226,
+					"left": 40,
+					"width": 190,
+					"height": 21,
+					"fontFamily": "System Font",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"text": "Gamers"
+				},
+				"Text": {
+					"type": "text",
+					"top": 216,
+					"left": 538,
+					"width": 1,
+					"height": 17,
+					"fontWeight": "bold",
+					"text": "Eats meat"
+				},
+				"BlueGamers": {
+					"type": "listbox",
+					"top": 396,
+					"left": 400,
+					"width": 215,
+					"height": 117,
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"focusable": false,
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"dataSource": "Form:C1466.blue",
+					"metaSource": "decorateGamerInTeam(This:C1470)",
+					"selectionMode": "none",
+					"scrollbarHorizontal": "automatic",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"stroke": "#696969",
+					"columns": [
+						{
+							"name": "Column18",
+							"dataSource": "This:C1470.firstName",
+							"width": 100,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#696969",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header18",
+								"text": "First name",
+								"stroke": "#696969",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer13",
+								"stroke": "#696969",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column19",
+							"dataSource": "This:C1470.lastName",
+							"width": 100,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#696969",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header19",
+								"text": "Last name",
+								"stroke": "#696969",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer14",
+								"stroke": "#696969",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						}
+					]
+				},
+				"RedGamers": {
+					"type": "listbox",
+					"top": 246,
+					"left": 400,
+					"width": 215,
+					"height": 116,
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"focusable": false,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"dataSource": "Form:C1466.red",
+					"metaSource": "decorateGamerInTeam(This:C1470)",
+					"selectionMode": "none",
+					"scrollbarHorizontal": "automatic",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"stroke": "#696969",
+					"columns": [
+						{
+							"name": "Column6",
+							"dataSource": "This:C1470.firstName",
+							"width": 100,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#696969",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick"
+							],
+							"header": {
+								"name": "Header5",
+								"text": "First name",
+								"stroke": "#696969",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer3",
+								"stroke": "#696969",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column7",
+							"dataSource": "This:C1470.lastName",
+							"width": 100,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#696969",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header6",
+								"text": "Last name",
+								"stroke": "#696969",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer4",
+								"stroke": "#696969",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						}
+					]
+				},
+				"Check Box4": {
+					"type": "checkbox",
+					"top": 677,
+					"left": 40,
+					"width": 62,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "btnTrace",
+					"text": "Trace",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"btnViewFirst": {
+					"type": "button",
+					"top": 246,
+					"left": 630,
+					"width": 160,
+					"height": 20,
+					"text": "View first in Red team",
+					"focusable": false,
+					"method": "ObjectMethods/btnViewFirst.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"btnViewLast": {
+					"type": "button",
+					"top": 246,
+					"left": 810,
+					"width": 160,
+					"height": 20,
+					"text": "View last in Red team",
+					"focusable": false,
+					"method": "ObjectMethods/btnViewLast.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable": {
+					"type": "input",
+					"top": 418,
+					"left": 800,
+					"width": 150,
+					"height": 20,
+					"dataSource": "Form:C1466.gamer.firstName",
+					"textAlign": "left",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 446,
+					"left": 800,
+					"width": 150,
+					"height": 20,
+					"dataSource": "Form:C1466.gamer.lastName",
+					"textAlign": "left",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"AddToBlueButton": {
+					"type": "button",
+					"top": 416,
+					"left": 280,
+					"width": 100,
+					"height": 20,
+					"text": "Add to Blue ",
+					"focusable": false,
+					"method": "ObjectMethods/AddToBlueButton.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"AddToRedButton": {
+					"type": "button",
+					"top": 256,
+					"left": 280,
+					"width": 100,
+					"height": 20,
+					"text": "Add to Red",
+					"focusable": false,
+					"method": "ObjectMethods/AddToRedButton.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 471,
+					"left": 800,
+					"width": 50,
+					"height": 20,
+					"dataSource": "Form:C1466.gamer.level",
+					"textAlign": "left",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"NavButton1": {
+					"type": "button",
+					"top": 346,
+					"left": 690,
+					"width": 50,
+					"height": 20,
+					"text": "<<",
+					"focusable": false,
+					"method": "ObjectMethods/NavButton1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"NavButton4": {
+					"type": "button",
+					"top": 346,
+					"left": 870,
+					"width": 50,
+					"height": 20,
+					"text": ">>",
+					"focusable": false,
+					"method": "ObjectMethods/NavButton4.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"NavButton2": {
+					"type": "button",
+					"top": 346,
+					"left": 750,
+					"width": 50,
+					"height": 20,
+					"text": "<",
+					"focusable": false,
+					"method": "ObjectMethods/NavButton2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"NavButton3": {
+					"type": "button",
+					"top": 346,
+					"left": 810,
+					"width": 50,
+					"height": 20,
+					"text": ">",
+					"focusable": false,
+					"method": "ObjectMethods/NavButton3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button15": {
+					"type": "button",
+					"top": 536,
+					"left": 40,
+					"width": 280,
+					"height": 20,
+					"text": "To which team does the gamer belong?",
+					"focusable": false,
+					"method": "ObjectMethods/Button15.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable7": {
+					"type": "input",
+					"top": 536,
+					"left": 330,
+					"width": 90,
+					"height": 20,
+					"dataSource": "Form:C1466.containedInTeam",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Lbl_1": {
+					"type": "text",
+					"top": 418,
+					"left": 699,
+					"width": 96,
+					"height": 17,
+					"stroke": "#FF0000",
+					"textAlign": "right",
+					"text": "First name"
+				},
+				"Lbl_2": {
+					"type": "text",
+					"top": 446,
+					"left": 699,
+					"width": 96,
+					"height": 17,
+					"stroke": "#FF0000",
+					"textAlign": "right",
+					"text": "Last name"
+				},
+				"Lbl_3": {
+					"type": "text",
+					"top": 471,
+					"left": 741,
+					"width": 54,
+					"height": 17,
+					"stroke": "#FF0000",
+					"textAlign": "right",
+					"text": "Level"
+				},
+				"RankInMyTeam": {
+					"type": "button",
+					"top": 573,
+					"left": 678,
+					"width": 180,
+					"height": 20,
+					"text": "Rank in team?",
+					"focusable": false,
+					"method": "ObjectMethods/RankInMyTeam.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable8": {
+					"type": "input",
+					"top": 573,
+					"left": 866,
+					"width": 40,
+					"height": 20,
+					"dataSource": "Form:C1466.rankInTeam",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 501,
+					"left": 800,
+					"width": 50,
+					"height": 20,
+					"dataSource": "Form:C1466.gamer.yearsOfExperience",
+					"dataSourceTypeHint": "number",
+					"textAlign": "left",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Lbl_4": {
+					"type": "text",
+					"top": 501,
+					"left": 661,
+					"width": 134,
+					"height": 17,
+					"stroke": "#FF0000",
+					"textAlign": "right",
+					"text": "Years of experience"
+				},
+				"listBoxGamers": {
+					"type": "listbox",
+					"top": 246,
+					"left": 40,
+					"width": 215,
+					"height": 277,
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"focusable": false,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"dataSource": "Form:C1466.gamers",
+					"currentItemSource": "Form:C1466.selectedGamer",
+					"metaSource": "decorateGamer(This:C1470)",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "automatic",
+					"stroke": "#000000",
+					"method": "ObjectMethods/listBoxGamers.4dm",
+					"events": [
+						"onSelectionChange"
+					],
+					"columns": [
+						{
+							"name": "Column1",
+							"dataSource": "This:C1470.firstName",
+							"width": 100,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"header": {
+								"name": "Header1",
+								"text": "First name",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer1",
+								"stroke": "#000000",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "ColName",
+							"dataSource": "This:C1470.lastName",
+							"width": 100,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"header": {
+								"name": "Header2",
+								"text": "Last name",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer2",
+								"stroke": "#000000",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						}
+					]
+				},
+				"RankInGamers": {
+					"type": "button",
+					"top": 626,
+					"left": 678,
+					"width": 180,
+					"height": 20,
+					"text": "Overall rank?",
+					"focusable": false,
+					"method": "ObjectMethods/RankInGamers.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 626,
+					"left": 866,
+					"width": 40,
+					"height": 20,
+					"dataSource": "Form:C1466.rankInGamers",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"processUpdateContactButtonDirection2": {
+					"type": "input",
+					"top": 373,
+					"left": 656,
+					"width": 299,
+					"height": 33,
+					"sizingX": "grow",
+					"dataSource": "_Directions{1}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"processUpdateContactButtonDirection3": {
+					"type": "input",
+					"top": 540,
+					"left": 678,
+					"width": 280,
+					"height": 30,
+					"sizingX": "grow",
+					"dataSource": "_Directions{3}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"processUpdateContactButtonDirection4": {
+					"type": "input",
+					"top": 651,
+					"left": 678,
+					"width": 270,
+					"height": 20,
+					"sizingX": "grow",
+					"dataSource": "_Directions{4}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"processUpdateContactButtonDirection7": {
+					"type": "input",
+					"top": 285,
+					"left": 266,
+					"width": 122,
+					"height": 65,
+					"dataSource": "_Directions{7}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"processUpdateContactButtonDirection8": {
+					"type": "input",
+					"top": 823,
+					"left": 376,
+					"width": 310,
+					"height": 30,
+					"dataSource": "_Directions{8}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"processUpdateContactButtonDirection9": {
+					"type": "input",
+					"top": 851,
+					"left": 376,
+					"width": 320,
+					"height": 20,
+					"dataSource": "_Directions{9}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"processUpdateContactButtonDirection10": {
+					"type": "input",
+					"top": 273,
+					"left": 630,
+					"width": 149,
+					"height": 65,
+					"sizingX": "grow",
+					"dataSource": "_Directions{8}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"processUpdateContactButtonDirection11": {
+					"type": "input",
+					"top": 273,
+					"left": 816,
+					"width": 154,
+					"height": 65,
+					"sizingX": "grow",
+					"dataSource": "_Directions{9}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"processUpdateContactButtonDirection5": {
+					"type": "input",
+					"top": 597,
+					"left": 678,
+					"width": 270,
+					"height": 20,
+					"sizingX": "grow",
+					"dataSource": "_Directions{12}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"information1": {
+					"type": "input",
+					"top": 52,
+					"left": 55,
+					"width": 900,
+					"height": 160,
+					"sizingX": "grow",
+					"dataSource": "_Descriptions{2}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"information5": {
+					"type": "input",
+					"top": 60,
+					"left": 50,
+					"width": 900,
+					"height": 160,
+					"sizingX": "grow",
+					"dataSource": "_Descriptions{3}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text14": {
+					"type": "text",
+					"top": 240,
+					"left": 588,
+					"width": 1,
+					"height": 17,
+					"fontWeight": "bold",
+					"text": "Eats meat"
+				},
+				"Text8": {
+					"type": "text",
+					"top": 226,
+					"left": 40,
+					"width": 300,
+					"height": 21,
+					"fontFamily": "System Font",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"text": "Ping Pong table parts"
+				},
+				"Gathered_Parts_LB": {
+					"type": "listbox",
+					"top": 246,
+					"left": 630,
+					"width": 315,
+					"height": 337,
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"focusable": false,
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"dataSource": "Form:C1466.gatheredParts",
+					"selectionMode": "none",
+					"scrollbarHorizontal": "automatic",
+					"stroke": "#000000",
+					"columns": [
+						{
+							"name": "Column3",
+							"dataSource": "This:C1470.name",
+							"width": 300,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"header": {
+								"name": "Header3",
+								"text": "Name",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer5",
+								"stroke": "#000000",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						}
+					]
+				},
+				"Gathered_Parts_Title": {
+					"type": "text",
+					"top": 226,
+					"left": 630,
+					"width": 373,
+					"height": 35,
+					"stroke": "#000000",
+					"fontFamily": "System Font",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"text": "The parts will be gathered in this order"
+				},
+				"Parts_LB": {
+					"type": "listbox",
+					"top": 246,
+					"left": 40,
+					"width": 315,
+					"height": 117,
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"focusable": false,
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"dataSource": "Form:C1466.parts",
+					"selectionMode": "none",
+					"scrollbarHorizontal": "automatic",
+					"stroke": "#000000",
+					"columns": [
+						{
+							"name": "Column5",
+							"dataSource": "This:C1470.name",
+							"width": 150,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"header": {
+								"name": "Header7",
+								"text": "Name",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer7",
+								"stroke": "#000000",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column8",
+							"dataSource": "This:C1470.quantity",
+							"width": 150,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"header": {
+								"name": "Header8",
+								"text": "Quantity",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer8",
+								"stroke": "#000000",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						}
+					]
+				},
+				"Gathered_Parts_field": {
+					"type": "input",
+					"top": 620,
+					"left": 865,
+					"width": 80,
+					"height": 20,
+					"dataSource": "Form:C1466.gatheredPartsOrdered",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Gathered_Parts_Button": {
+					"type": "button",
+					"top": 620,
+					"left": 630,
+					"width": 230,
+					"height": 20,
+					"text": "Am I an ordered entity selection?",
+					"focusable": false,
+					"method": "ObjectMethods/Gathered_Parts_Button.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Gathered_Parts_explanations": {
+					"type": "input",
+					"top": 646,
+					"left": 630,
+					"width": 330,
+					"height": 49,
+					"dataSource": "_Directions{5}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ViewWinners": {
+					"type": "button",
+					"top": 280,
+					"left": 370,
+					"width": 250,
+					"height": 20,
+					"text": "In which order will I use them?",
+					"focusable": false,
+					"method": "ObjectMethods/ViewWinners.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Check Box1": {
+					"type": "checkbox",
+					"top": 677,
+					"left": 40,
+					"width": 62,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "btnTrace",
+					"text": "Trace",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"listBoxGamers2": {
+					"type": "listbox",
+					"top": 246,
+					"left": 40,
+					"width": 475,
+					"height": 277,
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"focusable": false,
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"dataSource": "Form:C1466.gamers",
+					"selectionMode": "none",
+					"scrollbarHorizontal": "automatic",
+					"stroke": "#000000",
+					"columns": [
+						{
+							"name": "Colonne2",
+							"dataSource": "This:C1470.rank",
+							"width": 60,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"header": {
+								"name": "Entête2",
+								"text": "Rank",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Pied2",
+								"stroke": "#000000",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column2",
+							"dataSource": "This:C1470.firstName",
+							"width": 100,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"header": {
+								"name": "Header4",
+								"text": "First name",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer6",
+								"stroke": "#000000",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "ColName1",
+							"dataSource": "This:C1470.lastName",
+							"width": 100,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"header": {
+								"name": "Header13",
+								"text": "Last name",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer15",
+								"stroke": "#000000",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Colonne1",
+							"dataSource": "This:C1470.level",
+							"width": 60,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"header": {
+								"name": "Entête1",
+								"text": "Level",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Pied1",
+								"stroke": "#000000",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Colonne3",
+							"dataSource": "This:C1470.yearsOfExperience",
+							"width": 140,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"header": {
+								"name": "Entête3",
+								"text": "Years of experience",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Pied3",
+								"stroke": "#000000",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						}
+					]
+				},
+				"ViewWinners1": {
+					"type": "button",
+					"top": 540,
+					"left": 40,
+					"width": 250,
+					"height": 20,
+					"text": "Increase level for all gamers",
+					"focusable": false,
+					"method": "ObjectMethods/ViewWinners1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable5": {
+					"type": "input",
+					"top": 246,
+					"left": 700,
+					"width": 50,
+					"height": 20,
+					"dataSource": "Form:C1466.rank",
+					"dataSourceTypeHint": "number",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Texte1": {
+					"type": "text",
+					"top": 246,
+					"left": 540,
+					"width": 150,
+					"height": 20,
+					"textAlign": "right",
+					"text": "Get gamer with rank:"
+				},
+				"GetGamerButton": {
+					"type": "button",
+					"top": 246,
+					"left": 770,
+					"width": 70,
+					"height": 20,
+					"text": "OK",
+					"focusable": false,
+					"method": "ObjectMethods/GetGamerButton.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Round Rectangle1": {
+					"type": "rectangle",
+					"top": 300,
+					"left": 540,
+					"width": 370,
+					"height": 133,
+					"fill": "#C0C0C0",
+					"stroke": "transparent",
+					"borderRadius": 5
+				},
+				"Variable9": {
+					"type": "input",
+					"top": 310,
+					"left": 700,
+					"width": 150,
+					"height": 20,
+					"dataSource": "Form:C1466.gamer.firstName",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Variable10": {
+					"type": "input",
+					"top": 340,
+					"left": 700,
+					"width": 150,
+					"height": 20,
+					"dataSource": "Form:C1466.gamer.lastName",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Variable11": {
+					"type": "input",
+					"top": 370,
+					"left": 700,
+					"width": 50,
+					"height": 20,
+					"dataSource": "Form:C1466.gamer.level",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"loadedGamerFirstName": {
+					"type": "text",
+					"top": 310,
+					"left": 582,
+					"width": 108,
+					"height": 17,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "First name"
+				},
+				"loadedGamerLastName": {
+					"type": "text",
+					"top": 340,
+					"left": 582,
+					"width": 108,
+					"height": 17,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Last name"
+				},
+				"loadedGamerLevel": {
+					"type": "text",
+					"top": 370,
+					"left": 624,
+					"width": 66,
+					"height": 17,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Level"
+				},
+				"Variable13": {
+					"type": "input",
+					"top": 400,
+					"left": 700,
+					"width": 50,
+					"height": 20,
+					"dataSource": "Form:C1466.gamer.yearsOfExperience",
+					"dataSourceTypeHint": "number",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"loadedGamerYearsExp": {
+					"type": "text",
+					"top": 400,
+					"left": 544,
+					"width": 146,
+					"height": 17,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Years of experience"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 226,
+					"left": 40,
+					"width": 190,
+					"height": 21,
+					"fontFamily": "System Font",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"text": "Gamers"
+				},
+				"forEachExplanations": {
+					"type": "input",
+					"top": 570,
+					"left": 40,
+					"width": 475,
+					"height": 33,
+					"sizingX": "grow",
+					"dataSource": "_Directions{10}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"getExplanations": {
+					"type": "input",
+					"top": 450,
+					"left": 540,
+					"width": 422,
+					"height": 33,
+					"sizingX": "grow",
+					"dataSource": "_Directions{11}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"information6": {
+					"type": "input",
+					"top": 60,
+					"left": 50,
+					"width": 900,
+					"height": 160,
+					"sizingX": "grow",
+					"dataSource": "_Descriptions{4}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Check Box3": {
+					"type": "checkbox",
+					"top": 677,
+					"left": 40,
+					"width": 62,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "btnTrace",
+					"text": "Trace",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"information2": {
+					"type": "input",
+					"top": 60,
+					"left": 50,
+					"width": 900,
+					"height": 160,
+					"sizingX": "grow",
+					"dataSource": "_Descriptions{5}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text13": {
+					"type": "text",
+					"top": 230,
+					"left": 588,
+					"width": 1,
+					"height": 17,
+					"fontWeight": "bold",
+					"text": "Eats meat"
+				},
+				"Text16": {
+					"type": "text",
+					"top": 226,
+					"left": 40,
+					"width": 190,
+					"height": 21,
+					"fontFamily": "System Font",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"text": "Gamers"
+				},
+				"SmallList": {
+					"type": "listbox",
+					"top": 246,
+					"left": 600,
+					"width": 315,
+					"height": 257,
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"focusable": false,
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"dataSource": "Form:C1466.smallList",
+					"selectionMode": "none",
+					"scrollbarHorizontal": "automatic",
+					"stroke": "#000000",
+					"columns": [
+						{
+							"name": "Column9",
+							"dataSource": "This:C1470.firstName",
+							"width": 150,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"header": {
+								"name": "Header9",
+								"text": "First name",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer9",
+								"stroke": "#000000",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column10",
+							"dataSource": "This:C1470.lastName",
+							"width": 150,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"header": {
+								"name": "Header10",
+								"text": "Last name",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer10",
+								"stroke": "#000000",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						}
+					]
+				},
+				"Text17": {
+					"type": "text",
+					"top": 226,
+					"left": 600,
+					"width": 220,
+					"height": 21,
+					"stroke": "#1E90FF",
+					"fontFamily": "System Font",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"text": "Small list"
+				},
+				"listBoxGamers1": {
+					"type": "listbox",
+					"top": 246,
+					"left": 40,
+					"width": 315,
+					"height": 257,
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"focusable": false,
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"dataSource": "Form:C1466.gamers",
+					"currentItemSource": "Form:C1466.selectedWinner",
+					"selectionMode": "none",
+					"scrollbarHorizontal": "automatic",
+					"stroke": "#000000",
+					"columns": [
+						{
+							"name": "Column11",
+							"dataSource": "This:C1470.firstName",
+							"width": 150,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"header": {
+								"name": "Header11",
+								"text": "First name",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer11",
+								"stroke": "#000000",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column12",
+							"dataSource": "This:C1470.lastName",
+							"width": 150,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header12",
+								"text": "Last name",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer12",
+								"stroke": "#000000",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						}
+					]
+				},
+				"ViewPreviousButton": {
+					"type": "button",
+					"top": 580,
+					"left": 645,
+					"width": 130,
+					"height": 20,
+					"text": "View previous",
+					"focusable": false,
+					"method": "ObjectMethods/ViewPreviousButton.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ViewNextButton": {
+					"type": "button",
+					"top": 580,
+					"left": 785,
+					"width": 130,
+					"height": 20,
+					"text": "View next",
+					"focusable": false,
+					"method": "ObjectMethods/ViewNextButton.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"processUpdateContactButtonDirection6": {
+					"type": "input",
+					"top": 380,
+					"left": 380,
+					"width": 209,
+					"height": 48,
+					"dataSource": "_Directions{6}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Popup Dropdown List": {
+					"type": "dropdown",
+					"top": 340,
+					"left": 390,
+					"width": 170,
+					"height": 20,
+					"dataSource": "_sliceSizes",
+					"dataSourceTypeHint": "arrayNumber",
+					"focusable": false,
+					"method": "ObjectMethods/Popup Dropdown List.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 320,
+					"left": 390,
+					"width": 190,
+					"height": 21,
+					"fontFamily": "System Font",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"text": "Choose the slice size"
+				},
+				"Check Box2": {
+					"type": "checkbox",
+					"top": 677,
+					"left": 40,
+					"width": 62,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "btnTrace",
+					"text": "Trace",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"groups": {
+			"Groupe42": [
+				"Radio Button",
+				"Radio Button1"
+			]
+		}
+	}
+}
