@@ -1,0 +1,1938 @@
+{
+	"destination": "detailScreen",
+	"windowSizingX": "fixed",
+	"windowMinHeight": 720,
+	"windowMaxHeight": 32000,
+	"width": 1000,
+	"height": 720,
+	"menuBar": "Menu Bar #1",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Tab Control": {
+					"type": "tab",
+					"top": 20,
+					"left": 20,
+					"width": 960,
+					"height": 680,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "_TabTitles",
+					"dataSourceTypeHint": "arrayText",
+					"action": "gotoPage",
+					"events": [
+						"onClick"
+					]
+				},
+				"refRowRed": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 1,
+					"height": 1,
+					"class": "ref-row-red",
+					"stroke": "transparent"
+				},
+				"refRowBlue": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 1,
+					"height": 1,
+					"class": "ref-row-blue",
+					"stroke": "transparent"
+				},
+				"refLabelRed": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 1,
+					"height": 1,
+					"class": "ref-label-red",
+					"stroke": "transparent"
+				},
+				"refLabelBlue": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 1,
+					"height": 1,
+					"class": "ref-label-blue",
+					"stroke": "transparent"
+				}
+			}
+		},
+		{
+			"objects": {
+				"information4": {
+					"type": "input",
+					"top": 370,
+					"left": 80,
+					"width": 800,
+					"height": 320,
+					"sizingX": "grow",
+					"dataSource": "_Descriptions{1}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"stroke": "automatic"
+				},
+				"information3": {
+					"type": "input",
+					"top": 80,
+					"left": 80,
+					"width": 800,
+					"height": 280,
+					"sizingX": "grow",
+					"dataSource": "mainDescription",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"stroke": "automatic"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Radio Button": {
+					"type": "radio",
+					"top": 222,
+					"left": 400,
+					"width": 133,
+					"height": 21,
+					"dataSource": "r1",
+					"text": ":xliff:TeamRed",
+					"fontFamily": "System Font",
+					"fontSize": 14,
+					"focusable": false,
+					"radioGroup": "Groupe42",
+					"method": "ObjectMethods/Radio Button.4dm",
+					"events": [
+						"onClick"
+					],
+					"class": "red-text"
+				},
+				"Radio Button1": {
+					"type": "radio",
+					"top": 372,
+					"left": 400,
+					"width": 133,
+					"height": 21,
+					"dataSource": "r2",
+					"text": ":xliff:TeamBlue",
+					"fontFamily": "System Font",
+					"fontSize": 14,
+					"focusable": false,
+					"radioGroup": "Groupe42",
+					"method": "ObjectMethods/Radio Button1.4dm",
+					"events": [
+						"onClick"
+					],
+					"class": "blue-text"
+				},
+				"Round Rectangle": {
+					"type": "rectangle",
+					"top": 356,
+					"left": 652,
+					"width": 310,
+					"height": 340,
+					"stroke": "transparent",
+					"borderRadius": 5,
+					"class": "panel"
+				},
+				"processUpdateContactButtonDirection1": {
+					"type": "input",
+					"top": 566,
+					"left": 40,
+					"width": 429,
+					"height": 49,
+					"sizingX": "grow",
+					"dataSource": "_Directions{2}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"stroke": "automatic"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 226,
+					"left": 40,
+					"width": 190,
+					"height": 21,
+					"fontFamily": "System Font",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"text": ":xliff:HDI2_Gamers",
+					"stroke": "automatic"
+				},
+				"Text": {
+					"type": "text",
+					"top": 216,
+					"left": 538,
+					"width": 1,
+					"height": 17,
+					"fontWeight": "bold",
+					"text": ":xliff:HDI2_EatsMeat",
+					"stroke": "automatic"
+				},
+				"BlueGamers": {
+					"type": "listbox",
+					"top": 396,
+					"left": 400,
+					"width": 215,
+					"height": 117,
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"focusable": false,
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"dataSource": "Form:C1466.blue",
+					"metaSource": "decorateGamerInTeam(This:C1470)",
+					"selectionMode": "none",
+					"scrollbarHorizontal": "automatic",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"columns": [
+						{
+							"name": "Column18",
+							"dataSource": "This:C1470.firstName",
+							"width": 100,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header18",
+								"text": ":xliff:HDI2_FirstName",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer13",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
+						},
+						{
+							"name": "Column19",
+							"dataSource": "This:C1470.lastName",
+							"width": 100,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header19",
+								"text": ":xliff:HDI2_LastName",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer14",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
+						}
+					],
+					"class": "muted",
+					"fill": "automatic",
+					"alternateFill": "automaticAlternate"
+				},
+				"RedGamers": {
+					"type": "listbox",
+					"top": 246,
+					"left": 400,
+					"width": 215,
+					"height": 116,
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"focusable": false,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"dataSource": "Form:C1466.red",
+					"metaSource": "decorateGamerInTeam(This:C1470)",
+					"selectionMode": "none",
+					"scrollbarHorizontal": "automatic",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"columns": [
+						{
+							"name": "Column6",
+							"dataSource": "This:C1470.firstName",
+							"width": 100,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick"
+							],
+							"header": {
+								"name": "Header5",
+								"text": ":xliff:HDI2_FirstName",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer3",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
+						},
+						{
+							"name": "Column7",
+							"dataSource": "This:C1470.lastName",
+							"width": 100,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header6",
+								"text": ":xliff:HDI2_LastName",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer4",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
+						}
+					],
+					"class": "muted",
+					"fill": "automatic",
+					"alternateFill": "automaticAlternate"
+				},
+				"Check Box4": {
+					"type": "checkbox",
+					"top": 677,
+					"left": 40,
+					"width": 62,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "btnTrace",
+					"text": ":xliff:HDI2_Trace",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"btnViewFirst": {
+					"type": "button",
+					"top": 246,
+					"left": 630,
+					"width": 160,
+					"text": ":xliff:BtnViewFirstRed",
+					"focusable": false,
+					"method": "ObjectMethods/btnViewFirst.4dm",
+					"events": [
+						"onClick"
+					],
+					"class": "default"
+				},
+				"btnViewLast": {
+					"type": "button",
+					"top": 246,
+					"left": 810,
+					"width": 160,
+					"text": ":xliff:BtnViewLastRed",
+					"focusable": false,
+					"method": "ObjectMethods/btnViewLast.4dm",
+					"events": [
+						"onClick"
+					],
+					"class": "default"
+				},
+				"Variable": {
+					"type": "input",
+					"top": 418,
+					"left": 800,
+					"width": 150,
+					"height": 20,
+					"dataSource": "Form:C1466.gamer.firstName",
+					"textAlign": "left",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "none",
+					"stroke": "automatic"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 446,
+					"left": 800,
+					"width": 150,
+					"height": 20,
+					"dataSource": "Form:C1466.gamer.lastName",
+					"textAlign": "left",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "none",
+					"stroke": "automatic"
+				},
+				"AddToBlueButton": {
+					"type": "button",
+					"top": 416,
+					"left": 280,
+					"width": 100,
+					"text": ":xliff:HDI2_AddToBlue",
+					"focusable": false,
+					"method": "ObjectMethods/AddToBlueButton.4dm",
+					"events": [
+						"onClick"
+					],
+					"class": "default"
+				},
+				"AddToRedButton": {
+					"type": "button",
+					"top": 256,
+					"left": 280,
+					"width": 100,
+					"text": ":xliff:HDI2_AddToRed",
+					"focusable": false,
+					"method": "ObjectMethods/AddToRedButton.4dm",
+					"events": [
+						"onClick"
+					],
+					"class": "default"
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 471,
+					"left": 800,
+					"width": 50,
+					"height": 20,
+					"dataSource": "Form:C1466.gamer.level",
+					"textAlign": "left",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "none",
+					"stroke": "automatic"
+				},
+				"NavButton1": {
+					"type": "button",
+					"top": 346,
+					"left": 690,
+					"width": 50,
+					"text": "<<",
+					"focusable": false,
+					"method": "ObjectMethods/NavButton1.4dm",
+					"events": [
+						"onClick"
+					],
+					"class": "default"
+				},
+				"NavButton4": {
+					"type": "button",
+					"top": 346,
+					"left": 870,
+					"width": 50,
+					"text": ">>",
+					"focusable": false,
+					"method": "ObjectMethods/NavButton4.4dm",
+					"events": [
+						"onClick"
+					],
+					"class": "default"
+				},
+				"NavButton2": {
+					"type": "button",
+					"top": 346,
+					"left": 750,
+					"width": 50,
+					"text": "<",
+					"focusable": false,
+					"method": "ObjectMethods/NavButton2.4dm",
+					"events": [
+						"onClick"
+					],
+					"class": "default"
+				},
+				"NavButton3": {
+					"type": "button",
+					"top": 346,
+					"left": 810,
+					"width": 50,
+					"text": ">",
+					"focusable": false,
+					"method": "ObjectMethods/NavButton3.4dm",
+					"events": [
+						"onClick"
+					],
+					"class": "default"
+				},
+				"Button15": {
+					"type": "button",
+					"top": 536,
+					"left": 40,
+					"width": 280,
+					"text": ":xliff:HDI2_WhichTeam",
+					"focusable": false,
+					"method": "ObjectMethods/Button15.4dm",
+					"events": [
+						"onClick"
+					],
+					"class": "default"
+				},
+				"Variable7": {
+					"type": "input",
+					"top": 536,
+					"left": 330,
+					"width": 90,
+					"height": 20,
+					"dataSource": "Form:C1466.containedInTeam",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"stroke": "automatic",
+					"fill": "automatic"
+				},
+				"Lbl_1": {
+					"type": "text",
+					"top": 418,
+					"left": 699,
+					"width": 96,
+					"height": 17,
+					"textAlign": "right",
+					"text": ":xliff:HDI2_FirstName",
+					"class": "red-text"
+				},
+				"Lbl_2": {
+					"type": "text",
+					"top": 446,
+					"left": 699,
+					"width": 96,
+					"height": 17,
+					"textAlign": "right",
+					"text": ":xliff:HDI2_LastName",
+					"class": "red-text"
+				},
+				"Lbl_3": {
+					"type": "text",
+					"top": 471,
+					"left": 741,
+					"width": 54,
+					"height": 17,
+					"textAlign": "right",
+					"text": ":xliff:HDI2_Level",
+					"class": "red-text"
+				},
+				"RankInMyTeam": {
+					"type": "button",
+					"top": 573,
+					"left": 678,
+					"width": 180,
+					"text": ":xliff:HDI2_RankInTeam",
+					"focusable": false,
+					"method": "ObjectMethods/RankInMyTeam.4dm",
+					"events": [
+						"onClick"
+					],
+					"class": "default"
+				},
+				"Variable8": {
+					"type": "input",
+					"top": 573,
+					"left": 866,
+					"width": 40,
+					"height": 20,
+					"dataSource": "Form:C1466.rankInTeam",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"stroke": "automatic"
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 501,
+					"left": 800,
+					"width": 50,
+					"height": 20,
+					"dataSource": "Form:C1466.gamer.yearsOfExperience",
+					"dataSourceTypeHint": "number",
+					"textAlign": "left",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"stroke": "automatic"
+				},
+				"Lbl_4": {
+					"type": "text",
+					"top": 501,
+					"left": 661,
+					"width": 134,
+					"height": 17,
+					"textAlign": "right",
+					"text": ":xliff:HDI2_YearsOfExperience",
+					"class": "red-text"
+				},
+				"listBoxGamers": {
+					"type": "listbox",
+					"top": 246,
+					"left": 40,
+					"width": 215,
+					"height": 277,
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"focusable": false,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"dataSource": "Form:C1466.gamers",
+					"currentItemSource": "Form:C1466.selectedGamer",
+					"metaSource": "decorateGamer(This:C1470)",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "automatic",
+					"stroke": "automatic",
+					"method": "ObjectMethods/listBoxGamers.4dm",
+					"events": [
+						"onSelectionChange"
+					],
+					"columns": [
+						{
+							"name": "Column1",
+							"dataSource": "This:C1470.firstName",
+							"width": 100,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"header": {
+								"name": "Header1",
+								"text": ":xliff:HDI2_FirstName",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer1",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
+						},
+						{
+							"name": "ColName",
+							"dataSource": "This:C1470.lastName",
+							"width": 100,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"header": {
+								"name": "Header2",
+								"text": ":xliff:HDI2_LastName",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer2",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
+						}
+					],
+					"fill": "automatic",
+					"alternateFill": "automaticAlternate"
+				},
+				"RankInGamers": {
+					"type": "button",
+					"top": 626,
+					"left": 678,
+					"width": 180,
+					"text": ":xliff:HDI2_OverallRank",
+					"focusable": false,
+					"method": "ObjectMethods/RankInGamers.4dm",
+					"events": [
+						"onClick"
+					],
+					"class": "default"
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 626,
+					"left": 866,
+					"width": 40,
+					"height": 20,
+					"dataSource": "Form:C1466.rankInGamers",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"stroke": "automatic"
+				},
+				"processUpdateContactButtonDirection2": {
+					"type": "input",
+					"top": 373,
+					"left": 656,
+					"width": 299,
+					"height": 33,
+					"sizingX": "grow",
+					"dataSource": "_Directions{1}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"stroke": "automatic"
+				},
+				"processUpdateContactButtonDirection3": {
+					"type": "input",
+					"top": 540,
+					"left": 678,
+					"width": 280,
+					"height": 30,
+					"sizingX": "grow",
+					"dataSource": "_Directions{3}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"stroke": "automatic"
+				},
+				"processUpdateContactButtonDirection4": {
+					"type": "input",
+					"top": 651,
+					"left": 678,
+					"width": 270,
+					"height": 20,
+					"sizingX": "grow",
+					"dataSource": "_Directions{4}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"stroke": "automatic"
+				},
+				"processUpdateContactButtonDirection7": {
+					"type": "input",
+					"top": 285,
+					"left": 266,
+					"width": 122,
+					"height": 65,
+					"dataSource": "_Directions{7}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"stroke": "automatic"
+				},
+				"processUpdateContactButtonDirection8": {
+					"type": "input",
+					"top": 823,
+					"left": 376,
+					"width": 310,
+					"height": 30,
+					"dataSource": "_Directions{8}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"stroke": "automatic"
+				},
+				"processUpdateContactButtonDirection9": {
+					"type": "input",
+					"top": 851,
+					"left": 376,
+					"width": 320,
+					"height": 20,
+					"dataSource": "_Directions{9}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"stroke": "automatic"
+				},
+				"processUpdateContactButtonDirection10": {
+					"type": "input",
+					"top": 273,
+					"left": 630,
+					"width": 149,
+					"height": 65,
+					"sizingX": "grow",
+					"dataSource": "_Directions{8}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"stroke": "automatic"
+				},
+				"processUpdateContactButtonDirection11": {
+					"type": "input",
+					"top": 273,
+					"left": 816,
+					"width": 154,
+					"height": 65,
+					"sizingX": "grow",
+					"dataSource": "_Directions{9}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"stroke": "automatic"
+				},
+				"processUpdateContactButtonDirection5": {
+					"type": "input",
+					"top": 597,
+					"left": 678,
+					"width": 270,
+					"height": 20,
+					"sizingX": "grow",
+					"dataSource": "_Directions{12}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"stroke": "automatic"
+				},
+				"information1": {
+					"type": "input",
+					"top": 52,
+					"left": 55,
+					"width": 900,
+					"height": 160,
+					"sizingX": "grow",
+					"dataSource": "_Descriptions{2}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"stroke": "automatic"
+				}
+			}
+		},
+		{
+			"objects": {
+				"information5": {
+					"type": "input",
+					"top": 60,
+					"left": 50,
+					"width": 900,
+					"height": 160,
+					"sizingX": "grow",
+					"dataSource": "_Descriptions{3}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"stroke": "automatic"
+				},
+				"Text14": {
+					"type": "text",
+					"top": 240,
+					"left": 588,
+					"width": 1,
+					"height": 17,
+					"fontWeight": "bold",
+					"text": ":xliff:HDI2_EatsMeat",
+					"stroke": "automatic"
+				},
+				"Text8": {
+					"type": "text",
+					"top": 226,
+					"left": 40,
+					"width": 300,
+					"height": 21,
+					"fontFamily": "System Font",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"text": ":xliff:HDI2_PingPongTableParts",
+					"stroke": "automatic"
+				},
+				"Gathered_Parts_LB": {
+					"type": "listbox",
+					"top": 246,
+					"left": 630,
+					"width": 315,
+					"height": 337,
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"focusable": false,
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"dataSource": "Form:C1466.gatheredParts",
+					"selectionMode": "none",
+					"scrollbarHorizontal": "automatic",
+					"stroke": "automatic",
+					"columns": [
+						{
+							"name": "Column3",
+							"dataSource": "This:C1470.name",
+							"width": 300,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"header": {
+								"name": "Header3",
+								"text": ":xliff:HDI2_Name",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer5",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
+						}
+					],
+					"fill": "automatic",
+					"alternateFill": "automaticAlternate"
+				},
+				"Gathered_Parts_Title": {
+					"type": "text",
+					"top": 226,
+					"left": 630,
+					"width": 373,
+					"height": 35,
+					"stroke": "automatic",
+					"fontFamily": "System Font",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"text": ":xliff:HDI2_PartsGatheredOrder"
+				},
+				"Parts_LB": {
+					"type": "listbox",
+					"top": 246,
+					"left": 40,
+					"width": 315,
+					"height": 117,
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"focusable": false,
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"dataSource": "Form:C1466.parts",
+					"selectionMode": "none",
+					"scrollbarHorizontal": "automatic",
+					"stroke": "automatic",
+					"columns": [
+						{
+							"name": "Column5",
+							"dataSource": "This:C1470.name",
+							"width": 150,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"header": {
+								"name": "Header7",
+								"text": ":xliff:HDI2_Name",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer7",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
+						},
+						{
+							"name": "Column8",
+							"dataSource": "This:C1470.quantity",
+							"width": 150,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"header": {
+								"name": "Header8",
+								"text": ":xliff:HDI2_Quantity",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer8",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
+						}
+					],
+					"fill": "automatic",
+					"alternateFill": "automaticAlternate"
+				},
+				"Gathered_Parts_field": {
+					"type": "input",
+					"top": 620,
+					"left": 865,
+					"width": 80,
+					"height": 20,
+					"dataSource": "Form:C1466.gatheredPartsOrdered",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"stroke": "automatic",
+					"fill": "automatic"
+				},
+				"Gathered_Parts_Button": {
+					"type": "button",
+					"top": 620,
+					"left": 630,
+					"width": 230,
+					"text": ":xliff:HDI2_AmIOrdered",
+					"focusable": false,
+					"method": "ObjectMethods/Gathered_Parts_Button.4dm",
+					"events": [
+						"onClick"
+					],
+					"class": "default"
+				},
+				"Gathered_Parts_explanations": {
+					"type": "input",
+					"top": 646,
+					"left": 630,
+					"width": 330,
+					"height": 49,
+					"dataSource": "_Directions{5}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"stroke": "automatic"
+				},
+				"ViewWinners": {
+					"type": "button",
+					"top": 280,
+					"left": 370,
+					"width": 250,
+					"text": ":xliff:HDI2_WhichOrder",
+					"focusable": false,
+					"method": "ObjectMethods/ViewWinners.4dm",
+					"events": [
+						"onClick"
+					],
+					"class": "default"
+				},
+				"Check Box1": {
+					"type": "checkbox",
+					"top": 677,
+					"left": 40,
+					"width": 62,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "btnTrace",
+					"text": ":xliff:HDI2_Trace",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"listBoxGamers2": {
+					"type": "listbox",
+					"top": 246,
+					"left": 40,
+					"width": 475,
+					"height": 277,
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"focusable": false,
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"dataSource": "Form:C1466.gamers",
+					"selectionMode": "none",
+					"scrollbarHorizontal": "automatic",
+					"stroke": "automatic",
+					"columns": [
+						{
+							"name": "Colonne2",
+							"dataSource": "This:C1470.rank",
+							"width": 60,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"header": {
+								"name": "Entête2",
+								"text": ":xliff:HDI2_Rank",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Pied2",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
+						},
+						{
+							"name": "Column2",
+							"dataSource": "This:C1470.firstName",
+							"width": 100,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"header": {
+								"name": "Header4",
+								"text": ":xliff:HDI2_FirstName",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer6",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
+						},
+						{
+							"name": "ColName1",
+							"dataSource": "This:C1470.lastName",
+							"width": 100,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"header": {
+								"name": "Header13",
+								"text": ":xliff:HDI2_LastName",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer15",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
+						},
+						{
+							"name": "Colonne1",
+							"dataSource": "This:C1470.level",
+							"width": 60,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"header": {
+								"name": "Entête1",
+								"text": ":xliff:HDI2_Level",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Pied1",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
+						},
+						{
+							"name": "Colonne3",
+							"dataSource": "This:C1470.yearsOfExperience",
+							"width": 140,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"header": {
+								"name": "Entête3",
+								"text": ":xliff:HDI2_YearsOfExperience",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Pied3",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
+						}
+					],
+					"fill": "automatic",
+					"alternateFill": "automaticAlternate"
+				},
+				"ViewWinners1": {
+					"type": "button",
+					"top": 540,
+					"left": 40,
+					"width": 250,
+					"text": ":xliff:HDI2_IncreaseLevel",
+					"focusable": false,
+					"method": "ObjectMethods/ViewWinners1.4dm",
+					"events": [
+						"onClick"
+					],
+					"class": "default"
+				},
+				"Variable5": {
+					"type": "input",
+					"top": 246,
+					"left": 700,
+					"width": 50,
+					"height": 20,
+					"dataSource": "Form:C1466.rank",
+					"dataSourceTypeHint": "number",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"stroke": "automatic",
+					"fill": "automatic"
+				},
+				"Texte1": {
+					"type": "text",
+					"top": 246,
+					"left": 540,
+					"width": 150,
+					"height": 20,
+					"textAlign": "right",
+					"text": ":xliff:HDI2_GetGamerWithRank",
+					"stroke": "automatic"
+				},
+				"GetGamerButton": {
+					"type": "button",
+					"top": 246,
+					"left": 770,
+					"width": 70,
+					"text": ":xliff:CommonOK",
+					"focusable": false,
+					"method": "ObjectMethods/GetGamerButton.4dm",
+					"events": [
+						"onClick"
+					],
+					"class": "default"
+				},
+				"Round Rectangle1": {
+					"type": "rectangle",
+					"top": 300,
+					"left": 540,
+					"width": 370,
+					"height": 133,
+					"stroke": "transparent",
+					"borderRadius": 5,
+					"class": "panel"
+				},
+				"Variable9": {
+					"type": "input",
+					"top": 310,
+					"left": 700,
+					"width": 150,
+					"height": 20,
+					"dataSource": "Form:C1466.gamer.firstName",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "none",
+					"stroke": "automatic"
+				},
+				"Variable10": {
+					"type": "input",
+					"top": 340,
+					"left": 700,
+					"width": 150,
+					"height": 20,
+					"dataSource": "Form:C1466.gamer.lastName",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "none",
+					"stroke": "automatic"
+				},
+				"Variable11": {
+					"type": "input",
+					"top": 370,
+					"left": 700,
+					"width": 50,
+					"height": 20,
+					"dataSource": "Form:C1466.gamer.level",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "none",
+					"stroke": "automatic"
+				},
+				"loadedGamerFirstName": {
+					"type": "text",
+					"top": 310,
+					"left": 582,
+					"width": 108,
+					"height": 17,
+					"stroke": "automatic",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": ":xliff:HDI2_FirstName"
+				},
+				"loadedGamerLastName": {
+					"type": "text",
+					"top": 340,
+					"left": 582,
+					"width": 108,
+					"height": 17,
+					"stroke": "automatic",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": ":xliff:HDI2_LastName"
+				},
+				"loadedGamerLevel": {
+					"type": "text",
+					"top": 370,
+					"left": 624,
+					"width": 66,
+					"height": 17,
+					"stroke": "automatic",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": ":xliff:HDI2_Level"
+				},
+				"Variable13": {
+					"type": "input",
+					"top": 400,
+					"left": 700,
+					"width": 50,
+					"height": 20,
+					"dataSource": "Form:C1466.gamer.yearsOfExperience",
+					"dataSourceTypeHint": "number",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"stroke": "automatic"
+				},
+				"loadedGamerYearsExp": {
+					"type": "text",
+					"top": 400,
+					"left": 544,
+					"width": 146,
+					"height": 17,
+					"stroke": "automatic",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": ":xliff:HDI2_YearsOfExperience"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 226,
+					"left": 40,
+					"width": 190,
+					"height": 21,
+					"fontFamily": "System Font",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"text": ":xliff:HDI2_Gamers",
+					"stroke": "automatic"
+				},
+				"forEachExplanations": {
+					"type": "input",
+					"top": 570,
+					"left": 40,
+					"width": 475,
+					"height": 33,
+					"sizingX": "grow",
+					"dataSource": "_Directions{10}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"stroke": "automatic"
+				},
+				"getExplanations": {
+					"type": "input",
+					"top": 450,
+					"left": 540,
+					"width": 422,
+					"height": 33,
+					"sizingX": "grow",
+					"dataSource": "_Directions{11}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"stroke": "automatic"
+				},
+				"information6": {
+					"type": "input",
+					"top": 60,
+					"left": 50,
+					"width": 900,
+					"height": 160,
+					"sizingX": "grow",
+					"dataSource": "_Descriptions{4}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"stroke": "automatic"
+				},
+				"Check Box3": {
+					"type": "checkbox",
+					"top": 677,
+					"left": 40,
+					"width": 62,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "btnTrace",
+					"text": ":xliff:HDI2_Trace",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"information2": {
+					"type": "input",
+					"top": 60,
+					"left": 50,
+					"width": 900,
+					"height": 160,
+					"sizingX": "grow",
+					"dataSource": "_Descriptions{5}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"stroke": "automatic"
+				},
+				"Text13": {
+					"type": "text",
+					"top": 230,
+					"left": 588,
+					"width": 1,
+					"height": 17,
+					"fontWeight": "bold",
+					"text": ":xliff:HDI2_EatsMeat",
+					"stroke": "automatic"
+				},
+				"Text16": {
+					"type": "text",
+					"top": 226,
+					"left": 40,
+					"width": 190,
+					"height": 21,
+					"fontFamily": "System Font",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"text": ":xliff:HDI2_Gamers",
+					"stroke": "automatic"
+				},
+				"SmallList": {
+					"type": "listbox",
+					"top": 246,
+					"left": 600,
+					"width": 315,
+					"height": 257,
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"focusable": false,
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"dataSource": "Form:C1466.smallList",
+					"selectionMode": "none",
+					"scrollbarHorizontal": "automatic",
+					"stroke": "automatic",
+					"columns": [
+						{
+							"name": "Column9",
+							"dataSource": "This:C1470.firstName",
+							"width": 150,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"header": {
+								"name": "Header9",
+								"text": ":xliff:HDI2_FirstName",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer9",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
+						},
+						{
+							"name": "Column10",
+							"dataSource": "This:C1470.lastName",
+							"width": 150,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"header": {
+								"name": "Header10",
+								"text": ":xliff:HDI2_LastName",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer10",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
+						}
+					],
+					"fill": "automatic",
+					"alternateFill": "automaticAlternate"
+				},
+				"Text17": {
+					"type": "text",
+					"top": 226,
+					"left": 600,
+					"width": 220,
+					"height": 21,
+					"fontFamily": "System Font",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"text": ":xliff:HDI2_SmallList",
+					"class": "blue-text"
+				},
+				"listBoxGamers1": {
+					"type": "listbox",
+					"top": 246,
+					"left": 40,
+					"width": 315,
+					"height": 257,
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"focusable": false,
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"dataSource": "Form:C1466.gamers",
+					"currentItemSource": "Form:C1466.selectedWinner",
+					"selectionMode": "none",
+					"scrollbarHorizontal": "automatic",
+					"stroke": "automatic",
+					"columns": [
+						{
+							"name": "Column11",
+							"dataSource": "This:C1470.firstName",
+							"width": 150,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"header": {
+								"name": "Header11",
+								"text": ":xliff:HDI2_FirstName",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer11",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
+						},
+						{
+							"name": "Column12",
+							"dataSource": "This:C1470.lastName",
+							"width": 150,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header12",
+								"text": ":xliff:HDI2_LastName",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer12",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
+						}
+					],
+					"fill": "automatic",
+					"alternateFill": "automaticAlternate"
+				},
+				"ViewPreviousButton": {
+					"type": "button",
+					"top": 580,
+					"left": 645,
+					"width": 130,
+					"text": ":xliff:HDI2_ViewPrevious",
+					"focusable": false,
+					"method": "ObjectMethods/ViewPreviousButton.4dm",
+					"events": [
+						"onClick"
+					],
+					"class": "default"
+				},
+				"ViewNextButton": {
+					"type": "button",
+					"top": 580,
+					"left": 785,
+					"width": 130,
+					"text": ":xliff:HDI2_ViewNext",
+					"focusable": false,
+					"method": "ObjectMethods/ViewNextButton.4dm",
+					"events": [
+						"onClick"
+					],
+					"class": "default"
+				},
+				"processUpdateContactButtonDirection6": {
+					"type": "input",
+					"top": 380,
+					"left": 380,
+					"width": 209,
+					"height": 48,
+					"dataSource": "_Directions{6}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"stroke": "automatic"
+				},
+				"Popup Dropdown List": {
+					"type": "dropdown",
+					"top": 340,
+					"left": 390,
+					"width": 170,
+					"height": 20,
+					"dataSource": "_sliceSizes",
+					"dataSourceTypeHint": "arrayNumber",
+					"focusable": false,
+					"method": "ObjectMethods/Popup Dropdown List.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 320,
+					"left": 390,
+					"width": 190,
+					"height": 21,
+					"fontFamily": "System Font",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"text": ":xliff:HDI2_ChooseSliceSize",
+					"stroke": "automatic"
+				},
+				"Check Box2": {
+					"type": "checkbox",
+					"top": 677,
+					"left": 40,
+					"width": 62,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "btnTrace",
+					"text": ":xliff:HDI2_Trace",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"groups": {
+			"Groupe42": [
+				"Radio Button",
+				"Radio Button1"
+			]
+		}
+	}
+}

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+	<file datatype="plaintext" original="HDI2" source-language="en" target-language="ja">
+		<body>
+			<trans-unit id="HDI2_Gamers" resname="HDI2_Gamers">
+				<source>Gamers</source>
+				<target>ゲーマー</target>
+			</trans-unit>
+			<trans-unit id="HDI2_EatsMeat" resname="HDI2_EatsMeat">
+				<source>Eats meat</source>
+				<target>肉を食べる</target>
+			</trans-unit>
+			<trans-unit id="HDI2_FirstName" resname="HDI2_FirstName">
+				<source>First name</source>
+				<target>名</target>
+			</trans-unit>
+			<trans-unit id="HDI2_LastName" resname="HDI2_LastName">
+				<source>Last name</source>
+				<target>姓</target>
+			</trans-unit>
+			<trans-unit id="HDI2_Trace" resname="HDI2_Trace">
+				<source>Trace</source>
+				<target>トレース</target>
+			</trans-unit>
+			<trans-unit id="HDI2_AddToBlue" resname="HDI2_AddToBlue">
+				<source>Add to Blue</source>
+				<target>青チームに追加</target>
+			</trans-unit>
+			<trans-unit id="HDI2_AddToRed" resname="HDI2_AddToRed">
+				<source>Add to Red</source>
+				<target>赤チームに追加</target>
+			</trans-unit>
+			<trans-unit id="HDI2_Level" resname="HDI2_Level">
+				<source>Level</source>
+				<target>レベル</target>
+			</trans-unit>
+			<trans-unit id="HDI2_RankInTeam" resname="HDI2_RankInTeam">
+				<source>Rank in team?</source>
+				<target>チーム内の順位？</target>
+			</trans-unit>
+			<trans-unit id="HDI2_YearsOfExperience" resname="HDI2_YearsOfExperience">
+				<source>Years of experience</source>
+				<target>経験年数</target>
+			</trans-unit>
+			<trans-unit id="HDI2_OverallRank" resname="HDI2_OverallRank">
+				<source>Overall rank?</source>
+				<target>全体の順位？</target>
+			</trans-unit>
+			<trans-unit id="HDI2_PingPongTableParts" resname="HDI2_PingPongTableParts">
+				<source>Ping Pong table parts</source>
+				<target>卓球台の部品</target>
+			</trans-unit>
+			<trans-unit id="HDI2_Name" resname="HDI2_Name">
+				<source>Name</source>
+				<target>名前</target>
+			</trans-unit>
+			<trans-unit id="HDI2_Quantity" resname="HDI2_Quantity">
+				<source>Quantity</source>
+				<target>数量</target>
+			</trans-unit>
+			<trans-unit id="HDI2_PartsGatheredOrder" resname="HDI2_PartsGatheredOrder">
+				<source>The parts will be gathered in this order</source>
+				<target>部品はこの順序で集められます</target>
+			</trans-unit>
+			<trans-unit id="HDI2_AmIOrdered" resname="HDI2_AmIOrdered">
+				<source>Am I an ordered entity selection?</source>
+				<target>順序付きエンティティセレクションですか？</target>
+			</trans-unit>
+			<trans-unit id="HDI2_WhichOrder" resname="HDI2_WhichOrder">
+				<source>In which order will I use them?</source>
+				<target>どの順序で使いますか？</target>
+			</trans-unit>
+			<trans-unit id="HDI2_Rank" resname="HDI2_Rank">
+				<source>Rank</source>
+				<target>順位</target>
+			</trans-unit>
+			<trans-unit id="HDI2_IncreaseLevel" resname="HDI2_IncreaseLevel">
+				<source>Increase level for all gamers</source>
+				<target>全ゲーマーのレベルを上げる</target>
+			</trans-unit>
+			<trans-unit id="HDI2_GetGamerWithRank" resname="HDI2_GetGamerWithRank">
+				<source>Get gamer with rank:</source>
+				<target>順位でゲーマーを取得:</target>
+			</trans-unit>
+			<trans-unit id="HDI2_SmallList" resname="HDI2_SmallList">
+				<source>Small list</source>
+				<target>小さなリスト</target>
+			</trans-unit>
+			<trans-unit id="HDI2_ViewPrevious" resname="HDI2_ViewPrevious">
+				<source>View previous</source>
+				<target>前を表示</target>
+			</trans-unit>
+			<trans-unit id="HDI2_ViewNext" resname="HDI2_ViewNext">
+				<source>View next</source>
+				<target>次を表示</target>
+			</trans-unit>
+			<trans-unit id="HDI2_ChooseSliceSize" resname="HDI2_ChooseSliceSize">
+				<source>Choose the slice size</source>
+				<target>スライスのサイズを選択</target>
+			</trans-unit>
+			<trans-unit id="HDI2_WhichTeam" resname="HDI2_WhichTeam">
+				<source>To which team does the gamer belong?</source>
+				<target>このゲーマーはどのチームに所属していますか？</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

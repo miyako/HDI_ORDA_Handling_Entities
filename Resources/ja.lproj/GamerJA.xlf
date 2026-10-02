@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+	<file datatype="plaintext" original="Gamer" source-language="en" target-language="ja">
+		<body>
+			<trans-unit id="Gamer_Employee" resname="Gamer_Employee">
+				<source>Employee</source>
+				<target>従業員</target>
+			</trans-unit>
+			<trans-unit id="Gamer_ID" resname="Gamer_ID">
+				<source>ID : </source>
+				<target>ID : </target>
+			</trans-unit>
+			<trans-unit id="Gamer_FirstName" resname="Gamer_FirstName">
+				<source>firstname : </source>
+				<target>名 : </target>
+			</trans-unit>
+			<trans-unit id="Gamer_LastName" resname="Gamer_LastName">
+				<source>lastName : </source>
+				<target>姓 : </target>
+			</trans-unit>
+			<trans-unit id="Gamer_ManagerID" resname="Gamer_ManagerID">
+				<source>managerID : </source>
+				<target>マネージャーID : </target>
+			</trans-unit>
+			<trans-unit id="Gamer_EmployerID" resname="Gamer_EmployerID">
+				<source>employerID : </source>
+				<target>雇用主ID : </target>
+			</trans-unit>
+			<trans-unit id="Gamer_Salary" resname="Gamer_Salary">
+				<source>salary : </source>
+				<target>給与 : </target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

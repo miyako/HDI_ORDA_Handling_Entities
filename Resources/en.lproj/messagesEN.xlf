@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+	<file datatype="plaintext" original="messages" source-language="en" target-language="en">
+		<body>
+			<trans-unit id="TeamRed" resname="TeamRed">
+				<source>Red team</source>
+				<target>Red team</target>
+			</trans-unit>
+			<trans-unit id="TeamBlue" resname="TeamBlue">
+				<source>Blue team</source>
+				<target>Blue team</target>
+			</trans-unit>
+			<trans-unit id="BtnViewFirstRed" resname="BtnViewFirstRed">
+				<source>View first in Red team</source>
+				<target>View first in Red team</target>
+			</trans-unit>
+			<trans-unit id="BtnViewLastRed" resname="BtnViewLastRed">
+				<source>View last in Red team</source>
+				<target>View last in Red team</target>
+			</trans-unit>
+			<trans-unit id="HDI_Title" resname="HDI_Title">
+				<source>start handling entities in ORDA?</source>
+				<target>start handling entities in ORDA?</target>
+			</trans-unit>
+			<trans-unit id="HDI_Info" resname="HDI_Info">
+				<source>ORDA</source>
+				<target>ORDA</target>
+			</trans-unit>
+			<trans-unit id="BtnClose" resname="BtnClose">
+				<source>Close</source>
+				<target>Close</target>
+			</trans-unit>
+			<trans-unit id="ErrorViewProMain" resname="ErrorViewProMain">
+				<source>Sorry, this "How do I" (HDI) example demonstrates a 4D View Pro feature.</source>
+				<target>Sorry, this "How do I" (HDI) example demonstrates a 4D View Pro feature.</target>
+			</trans-unit>
+			<trans-unit id="ErrorViewProSub" resname="ErrorViewProSub">
+				<source>You must have a valid 4D View Pro license to continue.</source>
+				<target>You must have a valid 4D View Pro license to continue.</target>
+			</trans-unit>
+			<trans-unit id="ErrorWriteProMain" resname="ErrorWriteProMain">
+				<source>Sorry, this "How do I" (HDI) example demonstrates a 4D Write Pro feature.</source>
+				<target>Sorry, this "How do I" (HDI) example demonstrates a 4D Write Pro feature.</target>
+			</trans-unit>
+			<trans-unit id="ErrorWriteProSub" resname="ErrorWriteProSub">
+				<source>You must have a valid 4D Write Pro license to continue.</source>
+				<target>You must have a valid 4D Write Pro license to continue.</target>
+			</trans-unit>
+			<trans-unit id="AlertRankRange" resname="AlertRankRange">
+				<source>Enter a rank between 1 and 12</source>
+				<target>Enter a rank between 1 and 12</target>
+			</trans-unit>
+			<trans-unit id="TeamNone" resname="TeamNone">
+				<source>None</source>
+				<target>None</target>
+			</trans-unit>
+			<trans-unit id="PartsOrderedYes" resname="PartsOrderedYes">
+				<source>Yes, I am.</source>
+				<target>Yes, I am.</target>
+			</trans-unit>
+			<trans-unit id="PartsOrderedNo" resname="PartsOrderedNo">
+				<source>No, I am not.</source>
+				<target>No, I am not.</target>
+			</trans-unit>
+			<trans-unit id="BtnViewFirstBlue" resname="BtnViewFirstBlue">
+				<source>View first in Blue team</source>
+				<target>View first in Blue team</target>
+			</trans-unit>
+			<trans-unit id="BtnViewLastBlue" resname="BtnViewLastBlue">
+				<source>View last in Blue team</source>
+				<target>View last in Blue team</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
